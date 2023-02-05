@@ -3,7 +3,7 @@
     <section id="container-centre" class="column centre flex-1">
       <h1 class="page-title">Contact Us</h1>
       <div class="content">
-        <p>We'd be glad to hear from you.</p>
+        <p>Tell us how great we are in the form below.</p>
         <form class="form">
           <div class="row required">
             <label for="name">Name</label>

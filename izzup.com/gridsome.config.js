@@ -1,5 +1,5 @@
 module.exports = {
-  siteName: 'Ultri',
+  siteName: 'Gridsome',
 
   plugins: [
     {
