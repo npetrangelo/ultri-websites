@@ -4,9 +4,9 @@
       <h1 class="page-title">Welcome to Ultri</h1>
       <div class="content">
         <p>
-          Open Source Solutions, as a Service
+          An open platform for rapid development
         </p>
-        <h2 class="text-3xl">Open Platform Features</h2>
+        <h2 class="text-3xl">Open Platform</h2>
         <ul class="mb-12 list-disc pl-4">
           <li>Authentic8 included, focus on writing your app</li>
           <li>Open Gateway included, free SSL and powerful routing</li>
@@ -22,7 +22,7 @@
           <li><a href="https://github.com/Ultri-Izzup/ultri-open-platform">Open Source now and forever</a></li>
         </ul>
 
-        <h2 class="text-3xl">Open Gateway Features</h2>
+        <h2 class="text-3xl">Open Gateway</h2>
         <ul class="mb-12 list-disc pl-4">
           <li>Free, automatic SSL certs</li>
           <li>Lua scripting language</li>
@@ -34,7 +34,7 @@
           <li><a href="https://github.com/Ultri-Izzup/docker-open-gateway">Open Source now and forever</a></li>
         </ul>
 
-        <h2 class="text-3xl">Authentic8 Features</h2>
+        <h2 class="text-3xl">Authentic8</h2>
         <ul class="mb-12 list-disc pl-4">
           <li>Provides standalone authentication</li>
           <li>Sign up built to reduce friction</li>
@@ -45,7 +45,7 @@
           <li><a href="https://github.com/Ultri-Izzup/authentic8">Open Source now and forever</a></li>
         </ul>
 
-        <h2 class="text-3xl">Fastify Docker Features</h2>
+        <h2 class="text-3xl">Fastify Docker</h2>
         <ul class="mb-12 list-disc pl-4">
           <li>Base Dockerized, Fastify API</li>
           <li>JWT support</li>
