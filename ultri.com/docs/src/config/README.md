@@ -4,12 +4,17 @@ sidebar: auto
 
 # Config
 
-## foo
+## Open Gateway
 
 - Type: `string`
 - Default: `/`
 
-## bar
+## Authenic8
+
+- Type: `string`
+- Default: `/`
+
+## Ultri API
 
 - Type: `string`
 - Default: `/`

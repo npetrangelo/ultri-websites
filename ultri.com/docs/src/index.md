@@ -1,15 +1,15 @@
 ---
 home: true
-heroImage: https://v1.vuepress.vuejs.org/hero.png
-tagline: Ultri website
+heroImage: 
+tagline: Ultri Open Platform
 actionText: Quick Start →
 actionLink: /guide/
 features:
-- title: Feature 1 Title
-  details: Feature 1 Description
-- title: Feature 2 Title
-  details: Feature 2 Description
-- title: Feature 3 Title
-  details: Feature 3 Description
-footer: Made by Brian Winkers with ❤️
+- title: Open Gateway
+  details: Reverse proxy with automatics SSL, Postgres and Redis connectivity, ModeSecurity, JWT and Lua support.
+- title: Authentic8
+  details: Flexible and extensible open source identity provider. Passwordless magic-link logins are supported for minimal sign up friction.
+- title: Ultri API
+  details: High performance TypeScript API. Postgres, Redis, JWT and secure session support out of the box.
+footer: Made by Open Source Bike with ❤️
 ---
