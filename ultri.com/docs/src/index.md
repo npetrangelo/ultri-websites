@@ -1,14 +1,14 @@
 ---
 home: true
 heroImage: 
-tagline: Ultri Open Platform
+tagline: Open Source Made Easy
 actionText: Quick Start →
-actionLink: /guide/
+actionLink: /install/
 features:
 - title: Open Gateway
-  details: Reverse proxy with automatics SSL, Postgres and Redis connectivity, ModeSecurity, JWT and Lua support.
+  details: Reverse proxy with automatic SSL, Postgres and Redis connectivity, ModeSecurity, JWT and Lua support. 
 - title: Authentic8
-  details: Flexible and extensible open source identity provider. Passwordless magic-link logins are supported for minimal sign up friction.
+  details: Flexible and extensible open source identity provider. Passwordless magic-link logins provide friction-free signup.
 - title: Ultri API
   details: High performance TypeScript API. Postgres, Redis, JWT and secure session support out of the box.
 footer: Made by Open Source Bike with ❤️

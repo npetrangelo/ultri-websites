@@ -4,7 +4,7 @@ sidebar: auto
 
 # Config
 
-## Open Gateway
+## Open Gateways
 
 - Type: `string`
 - Default: `/`
