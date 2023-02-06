@@ -1,6 +1,10 @@
-# Ultri Open Platform - Installation and Deployment
+---
+sidebar: auto
+---
 
-The only supported method of deploying the platform is using the provided docker compose files.
+# Installation and Deployment
+
+The only supported method of deploying the Ultri Open Platform is using the provided docker compose files.
 
 For all deployment options you only need to checkout the [ultri-open-platform](https://github.com/Ultri-Izzup/ultri-open-platform) repo and perform the rest of the ork within that directory.
 
@@ -17,7 +21,7 @@ cp example.env .env
 
 Edit the `.env` files to match your environment.
 
-## Production
+## Production Deployment
 
 Run the base docker compose file, which provides the default set of production services. For production installations we recommend using services outside of docker for the data, and only using docker containers to process the data.
 
