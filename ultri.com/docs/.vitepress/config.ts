@@ -4,13 +4,25 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "Ultri",
   description: "Build it - Use it - Own it",
+  head: [
+    [
+      'script',
+      { async: '', src: 'https://www.googletagmanager.com/gtag/js?id=G-GKG2LWGGKE' }
+    ],
+    [
+      'script',
+      {},
+      "window.dataLayer = window.dataLayer || [];\nfunction gtag(){dataLayer.push(arguments);}\ngtag('js', new Date());\ngtag('config', 'G-GKG2LWGGKE');"
+    ]
+  ],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Join Now', link: '/tech-coop-membership/' },
       { text: 'Ownership', link: '/tech-coop-ownership/' },
-      { text: 'Projects', link: '/tech-coop-projects/' },
+      { text: 'Services', link: '/tech-coop-services/' },
+    //  { text: 'Projects', link: '/tech-coop-projects/' },
     //  {
     //    text: 'Projects',
     //    ariaLabel: 'Project Menu',
@@ -47,15 +59,6 @@ export default defineConfig({
           { text: 'Sociocracy Handbook', link: 'https://handbook.opensociocracy.org/' },
           { text: 'Sociocracy Logbook', link: 'https://logbook.opensociocracy.org/' },
           { text: 'Circle Builder', link: 'https://github.com/OpenSociocracy/circle-builder' },
-
-        ]
-      },
-      {
-        text: 'Resources',
-        items: [
-          { text: 'Sociocracy for All (SoFA)', link: 'https://www.sociocracyforall.org/' },
-          { text: 'Sociocracy 3.0 (S3)', link: 'https://sociocracy30.org/' },
-          { text: 'Start.coop', link: 'https://www.start.coop/' },
 
         ]
       }
