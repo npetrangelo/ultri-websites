@@ -10,6 +10,12 @@ hero:
     - theme: brand
       text: Ownership Model
       link: /ownership/
+    - theme: brand
+      text: Developer Info
+      link: /tech-coop-developers/
+    - theme: brand
+      text: Software Users
+      link: /coop-software-users/
     - theme: alt
       text: Join the conversation
       link: https://discord.gg/3DhFVkVQ
@@ -17,7 +23,7 @@ hero:
 
 features:
   - title: Developers
-    details: <b>Own the software you develop!</b><br /><br />Get real ownership, not worthless options. Have your voice heard, <a href="https://discord.gg/3DhFVkVQ">join now</a>.
+    details: <b>Own the software you develop!</b><br /><br />Get real ownership, not worthless options. Have your voice heard, <a href="https://discord.gg/3DhFVkVQ">join now</a>.<br />
   - title: Sociocracy Users
     details: <b>Own the software you use!</b><br /><br />Don't fear getting priced out of your tools, or them being discontinued. <a href="https://discord.gg/3DhFVkVQ">Join now</a> to get the tools you want.
   - title: Together
