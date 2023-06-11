@@ -1,6 +1,6 @@
 # Ultri Tech Co-op - Services
 
-$75-250 depending upon the contract length and term.
+$75-$250 depending upon the contract length and term.
 
 We offer special rates for non-profits and co-ops, based upon your ability to pay. Contatc us for additonal information.
 

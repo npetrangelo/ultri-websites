@@ -19,9 +19,10 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Join Now', link: '/tech-coop-membership/' },
-      { text: 'Ownership', link: '/tech-coop-ownership/' },
-      { text: 'Services', link: '/tech-coop-services/' },
+      { text: 'About Us', link: '/about-us/' },
+      { text: 'Join', link: '/tech-coop-membership/' },
+      { text: 'Own It', link: '/tech-coop-ownership/' },
+      
     //  { text: 'Projects', link: '/tech-coop-projects/' },
     //  {
     //    text: 'Projects',
@@ -33,14 +34,17 @@ export default defineConfig({
     //  }
     ],
 
-    sidebar: [
+    sidebar: {
+      "tech-coop-membership": [
       {
         text: 'Co-op Membership',
         items: [
           { text: 'Options', link: '/tech-coop-membership/' },
           { text: 'Sign Up', link: 'https://logbook.opensociocracy.org/' }
         ]
-      },
+      }
+    ],
+    "tech-coop-ownership": [
       {
         text: 'Ownership Model',
         items: [
@@ -52,7 +56,9 @@ export default defineConfig({
           { text: 'Guidance', link: '/tech-coop-ownership/guidance/' },
           { text: 'Investments', link: '/tech-coop-ownership/investments/' },
         ]
-      },
+      }
+    ],
+    "about-us": [
       {
         text: 'Co-op Projects',
         items: [
@@ -62,7 +68,8 @@ export default defineConfig({
 
         ]
       }
-    ],
+    ]
+    },
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/OpenSociocracy' }
