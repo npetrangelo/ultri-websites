@@ -8,11 +8,8 @@ hero:
   tagline: Focus on the features, not the framework
   actions:
     - theme: brand
-      text: Tech Stack
-      link: /tech-stack/
-    - theme: brand
-      text: Data Structure
-      link: /data-structure/
+      text: Technical Documentation
+      link: /ultri-open-platform/
     - theme: alt
       text: The Code
       link: https://github.com/OpenSociocracy/opensociocracy-platform
