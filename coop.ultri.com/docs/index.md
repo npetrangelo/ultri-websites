@@ -3,19 +3,19 @@
 layout: home
 
 hero:
-  name: "Ultri Tech Co-op"
+  name: "Ultri Co-op"
   text: "Own It!"
   tagline: Own the tools you build and use
   actions:
     - theme: brand
       text: Ownership Model
-      link: /ownership/
+      link: /tech-coop-ownership/
     - theme: brand
       text: Co-op Benefits
       link: /benefits/
     - theme: alt
       text: Join the conversation
-      link: https://discord.gg/gURgVdqv
+      link: https://discord.gg/3DhFVkVQ
 
 
 features:

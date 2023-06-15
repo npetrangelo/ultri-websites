@@ -1,4 +1,4 @@
-# Ultri Tech Co-op - Governance Rights
+# Ultri Co-op - Governance Rights
 
 ## Developers
 

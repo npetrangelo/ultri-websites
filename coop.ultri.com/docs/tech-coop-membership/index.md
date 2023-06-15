@@ -1,4 +1,4 @@
-# Ultri Tech Co-op - Memberships
+# Ultri Co-op - Memberships
 
 
 ## Software User

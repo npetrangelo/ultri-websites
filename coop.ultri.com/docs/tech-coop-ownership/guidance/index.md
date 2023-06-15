@@ -1,2 +1,2 @@
-# Ultri Tech Co-op - Guidance
+# Ultri Co-op - Guidance
 

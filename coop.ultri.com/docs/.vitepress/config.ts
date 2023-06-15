@@ -48,6 +48,7 @@ export default defineConfig({
       {
         text: 'Ownership Model',
         items: [
+          { text: 'Purpose', link: '/tech-coop-ownership/' },
           { text: 'Stakeholders', link: '/tech-coop-ownership/stakeholders/' },
           { text: 'Benefits', link: '/tech-coop-ownership/benefits/' },
           { text: 'Responsibilities', link: '/tech-coop-ownership/responsibilities/' },

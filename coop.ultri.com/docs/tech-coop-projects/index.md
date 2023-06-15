@@ -1,4 +1,4 @@
-# Ultri Tech Co-op - Projects
+# Ultri Co-op - Projects
 
 ## Sociocracy Handbook
 

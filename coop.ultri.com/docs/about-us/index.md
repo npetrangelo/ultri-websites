@@ -35,7 +35,7 @@ const members = [
 ]
 </script>
 
-# Ultri Tech Co-op - About Us
+# Ultri Co-op - About Us
 
 ## The Team
 

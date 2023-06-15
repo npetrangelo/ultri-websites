@@ -1,4 +1,4 @@
-# Ultri Tech Co-op - Financial Rights
+# Ultri Co-op - Financial Rights
 
 ## Developers
 

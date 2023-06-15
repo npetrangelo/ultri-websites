@@ -1,1 +1,1 @@
-# Ultri Tech Co-op - Investments
+# Ultri Co-op - Investments

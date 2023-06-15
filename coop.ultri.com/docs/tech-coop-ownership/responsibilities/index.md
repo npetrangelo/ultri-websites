@@ -1,4 +1,4 @@
-# Ultri Tech Co-op - Responsibilities
+# Ultri Co-op - Responsibilities
 
 ## Developers
 
