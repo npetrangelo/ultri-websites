@@ -18,10 +18,6 @@ quasar dev
 
 #### Local Access
 
-[Website:](https://localhost:9000)
-[API - gateway:](http://localhost)
-[API - direct:](http://localhost:3000)
-[POSTGRES:] localhost:5432
 
 ## AWS
 
