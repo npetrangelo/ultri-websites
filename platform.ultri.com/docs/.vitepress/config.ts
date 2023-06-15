@@ -36,8 +36,8 @@ export default defineConfig({
       {
         text: 'Data',
         items: [
-          { text: 'Database Model', link: '/nugget-schema/' },
-          { text: 'API Model', link: '/nugget-api/' }
+          { text: 'API Model', link: '/nugget-api/' },
+          { text: 'Database Model', link: '/nugget-schema/' }
         ]
       }
     ],
