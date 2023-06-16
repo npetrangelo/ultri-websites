@@ -1,4 +1,4 @@
-# Ultri Co-op - Products
+# Ultri Co-op Products
 
 ## Free Sociocracy Handbook
 

@@ -5,12 +5,19 @@
 * Better work environment
 * Profit sharing
 * Voting and governance rights
-* Voice in the product
+* Voice on the product and features
 
 ## Software User Benefits
 
 * They get the software the define
 * Better software prices
 * Stable software, no profit driven changes
-* Profit sharing
+* Co-op profit sharing
 * Voting and governance rights
+
+## Shared Benefits
+
+* Access to co-op hosted services
+* Can submit new feature requests
+* Can pitch new products to the co-op
+* Bring-your-own-domain, or use one of [our available domains](/domains/).
