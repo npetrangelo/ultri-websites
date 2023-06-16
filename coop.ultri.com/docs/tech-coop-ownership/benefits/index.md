@@ -1,17 +1,16 @@
 # Ultri Co-op - Benefits
 
-## Developers Benefits
+## Developer Benefits
 
-* Better salary
-* Better benefits
-* More flexibility
+* Better work environment
 * Profit sharing
-* Voting rights
+* Voting and governance rights
 * Voice in the product
 
-## Software Users Benefits
+## Software User Benefits
 
+* They get the software the define
 * Better software prices
 * Stable software, no profit driven changes
 * Profit sharing
-* Voting rights
+* Voting and governance rights

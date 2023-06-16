@@ -51,7 +51,7 @@ export default defineConfig({
           { text: 'Purpose', link: '/tech-coop-ownership/' },
           { text: 'Stakeholders', link: '/tech-coop-ownership/stakeholders/' },
           { text: 'Benefits', link: '/tech-coop-ownership/benefits/' },
-          { text: 'Responsibilities', link: '/tech-coop-ownership/responsibilities/' },
+          { text: 'Expectations', link: '/tech-coop-ownership/responsibilities/' },
           { text: 'Governance', link: '/tech-coop-ownership/governance/' },
           { text: 'Financial', link: '/tech-coop-ownership/financial/' },
           { text: 'Guidance', link: '/tech-coop-ownership/guidance/' },
