@@ -3,7 +3,7 @@
 ## Decisions
 
 * All members vote equally. 
-* A given human may vote as an end-user, a developer and the member of multiple organizations if they qualify in each during the vote.
+* A given human may vote as an end user, a developer and the member of multiple organizations if they qualify in each during the vote.
 * Members must have been in good standing the previous 4 months to vote on an issue.
 * We will use tools built by the co-op to manage the voting and decsion making processes.
 

@@ -1,6 +1,6 @@
 # Ultri Co-op - Expectations 
 
-Developers and end-users are expected to fulfill their responsibilities for the co-op to succeed.
+Developers and end users are expected to fulfill their responsibilities for the co-op to succeed.
 
 ## Developer Responsibilities
 

@@ -10,9 +10,6 @@ hero:
     - theme: brand
       text: Ownership Model
       link: /tech-coop-ownership/
-    - theme: brand
-      text: Co-op Benefits
-      link: /benefits/
     - theme: alt
       text: Join the conversation
       link: https://discord.gg/3DhFVkVQ

@@ -36,10 +36,12 @@ export default defineConfig({
 
     sidebar: {
       "tech-coop-membership": [
-      {
-        text: 'Co-op Membership',
-        items: [
-          { text: 'Options', link: '/tech-coop-membership/' },
+        {
+          text: 'Co-op Information',
+          items: [
+            { text: 'Ownership Model', link: '/tech-coop-ownership/' },
+            { text: 'Bylaws', link: '/tech-coop-bylaws/' },
+            { text: 'Membership Options', link: '/tech-coop-membership/' },
           { text: 'Sign Up', link: 'https://logbook.opensociocracy.org/' }
         ]
       }
@@ -60,6 +62,15 @@ export default defineConfig({
       }
     ],
     "about-us": [
+      {
+        text: 'Co-op Information',
+        items: [
+          { text: 'Ownership Model', link: '/tech-coop-ownership/' },
+          { text: 'Bylaws', link: '/tech-coop-bylaws/' },
+          { text: 'Membership Options', link: '/tech-coop-membership/' },
+
+        ]
+      },
       {
         text: 'Co-op Projects',
         items: [

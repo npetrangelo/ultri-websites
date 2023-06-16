@@ -4,9 +4,9 @@ The surplus profits are both reinvested and distributed.
 
 30% of the surplus profits are reinvested in the company. That money is budgeted using [apportionment](#apportionment).
 
-The remaining 70% goes to developers and end-users, with the majority going to developers who have put in long hours.
+The remaining 70% goes to developers and end users, with the majority going to developers who have put in long hours.
 
-80% goes to developers and 20% goes to end-users. Developers are taking a bigger risk by putting expensive effort into the co-op.
+80% goes to developers and 20% goes to end users. Developers are taking a bigger risk by putting expensive effort into the co-op.
 
 
 ## Developer Financial Rights
@@ -21,7 +21,7 @@ The total active story points of all developers gest summed. The profit to devel
 
 ## Software User Financial Rights
 
-* The end-users profits are split up equally amongst users, pro-rated for the number of months they were a member. 
+* The end users profits are split up equally amongst users, pro-rated for the number of months they were a member. 
 * The first 4 months of a user's membership do not count towards profit sharing-ownership. This prevents people from signing up if we get a windfall profit, and then leaving immediately after getting paid out.
 
 
@@ -29,6 +29,6 @@ The total active story points of all developers gest summed. The profit to devel
 
 The money for reinvestment goes through an apportionment process. The money allotted to each member does not go to them. They must assign that money to one or more of the co-op approved projects.
 
-70% of the funds are assigned to the end-user members. They use it, they should drive most of the features.
+70% of the funds are assigned to the end user members. They use it, they should drive most of the features.
 30% of the funds are assigned to the devlopers. This ensures important backend projects get funded.
 
