@@ -53,6 +53,7 @@ export default defineConfig({
           { text: 'Financial', link: '/ownership/financial/' },
           { text: 'Guidance', link: '/ownership/guidance/' },
           { text: 'Investments', link: '/ownership/investments/' },
+          { text: 'Co-op Bylaws', link: '/bylaws/' },
         ]
       },
       {
