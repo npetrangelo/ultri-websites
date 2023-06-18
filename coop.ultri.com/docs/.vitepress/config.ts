@@ -46,6 +46,17 @@ export default defineConfig({
         ]
       }
     ],
+    "members": [
+      {
+        text: 'Co-op Information',
+        items: [
+          { text: 'Ownership Model', link: '/tech-coop-ownership/' },
+          { text: 'Bylaws', link: '/tech-coop-bylaws/' },
+          { text: 'Membership Options', link: '/tech-coop-membership/' },
+        { text: 'Sign Up', link: 'https://logbook.opensociocracy.org/' }
+      ]
+    }
+  ],
     "ownership": [
       {
         text: 'Ownership Model',
