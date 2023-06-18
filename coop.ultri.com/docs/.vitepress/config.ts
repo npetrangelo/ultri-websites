@@ -45,14 +45,14 @@ export default defineConfig({
       {
         text: 'Ownership Model',
         items: [
-          { text: 'Purpose', link: '/tech-coop-ownership/' },
-          { text: 'Stakeholders', link: '/tech-coop-ownership/stakeholders/' },
-          { text: 'Benefits', link: '/tech-coop-ownership/benefits/' },
-          { text: 'Expectations', link: '/tech-coop-ownership/responsibilities/' },
-          { text: 'Governance', link: '/tech-coop-ownership/governance/' },
-          { text: 'Financial', link: '/tech-coop-ownership/financial/' },
-          { text: 'Guidance', link: '/tech-coop-ownership/guidance/' },
-          { text: 'Investments', link: '/tech-coop-ownership/investments/' },
+          { text: 'Purpose', link: '/ownership/' },
+          { text: 'Stakeholders', link: '/ownership/stakeholders/' },
+          { text: 'Benefits', link: '/ownership/benefits/' },
+          { text: 'Expectations', link: '/ownership/responsibilities/' },
+          { text: 'Governance', link: '/ownership/governance/' },
+          { text: 'Financial', link: '/ownership/financial/' },
+          { text: 'Guidance', link: '/ownership/guidance/' },
+          { text: 'Investments', link: '/ownership/investments/' },
         ]
       },
       {
@@ -61,6 +61,7 @@ export default defineConfig({
           { text: 'Sociocracy Handbook', link: 'https://handbook.opensociocracy.org/' },
           { text: 'Sociocracy Logbook', link: 'https://logbook.opensociocracy.org/' },
           { text: 'Circle Builder', link: 'https://github.com/OpenSociocracy/circle-builder' },
+          { text: 'Izzup - Fediverse', link: 'https://www.izzup.com' },
 
         ]
       }
