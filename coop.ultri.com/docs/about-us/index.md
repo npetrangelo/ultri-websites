@@ -1,7 +1,31 @@
 <script setup>
 import { VPTeamMembers } from 'vitepress/theme'
 
-const members = [
+const topMembers = [
+  {
+    avatar: 'https://handbook.opensociocracy.org/team/brian.jpg',
+    name: 'Brian Winkers',
+    title: 'Founding Member',
+    links: [
+      { icon: 'github', link: 'https://github.com/bwinkers' },
+      { icon: 'linkedin', link: 'https://www.linkedin.com/in/bwinkers/' }
+    ],
+    desc: 'Over 35 years experience with startups, community building and web development.'
+  },
+  {
+    avatar: 'https://handbook.opensociocracy.org/team/will.png',
+    name: 'Will Stedden',
+    title: 'Founding Member',
+    links: [
+      { icon: 'github', link: 'https://github.com/stedn' },
+      { icon: 'mastodon', link: 'https://sigmoid.social/@bonkerfield' },
+      { icon: 'linkedin', link: 'https://linkedin.com/in/willstedden' }
+    ],
+    desc: 'Likes to build things, has a passion for economic democracy and getting stuff done.'
+  },
+]
+
+const founders = [
   {
     avatar: 'https://handbook.opensociocracy.org/team/brian.jpg',
     name: 'Brian Winkers',
@@ -35,11 +59,15 @@ const members = [
 ]
 </script>
 
-# Ultri Co-op - About Us
+# About Ultri Co-op
 
-## The Team
+## Top Contributors
 
-<VPTeamMembers size="small" :members="members" />
+<VPTeamMembers size="small" :members="topMembers" />
+
+## Founding Members
+
+<VPTeamMembers size="small" :members="founders" />
 
 ## Products and Services
 

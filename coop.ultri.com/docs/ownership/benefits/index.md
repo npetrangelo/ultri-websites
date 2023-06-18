@@ -20,4 +20,4 @@
 * Access to co-op hosted services
 * Can submit new feature requests
 * Can pitch new products to the co-op
-* Bring-your-own-domain, or use one of [our available domains](/domains/).
+

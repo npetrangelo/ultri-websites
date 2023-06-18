@@ -20,8 +20,8 @@ export default defineConfig({
     nav: [
       { text: 'Home', link: '/' },
       { text: 'About Us', link: '/about-us/' },
-      { text: 'Join', link: '/tech-coop-membership/' },
-      { text: 'Own It', link: '/tech-coop-ownership/' },
+      { text: 'Join', link: '/coop-membership-packages/' },
+      { text: 'Own It', link: '/ownership/' },
       
     //  { text: 'Projects', link: '/tech-coop-projects/' },
     //  {
@@ -35,7 +35,7 @@ export default defineConfig({
     ],
 
     sidebar: {
-      "tech-coop-membership": [
+      "coop-membership-packages": [
         {
           text: 'Co-op Information',
           items: [
@@ -46,7 +46,7 @@ export default defineConfig({
         ]
       }
     ],
-    "tech-coop-ownership": [
+    "ownership": [
       {
         text: 'Ownership Model',
         items: [

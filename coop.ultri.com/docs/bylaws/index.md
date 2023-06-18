@@ -10,19 +10,49 @@ Anyone can choose to join either or both groups.
 
 ## Member Benefits
 
-For each membership class:
+### Developer Benefits
 
-What are the intended benefits of becoming a member-owner?
+* Profit sharing, based upon their precentage of completed story points.
+* Ability to submit product proposals.
+* Good pay for working on a stress free project.
+* Develop new skils in a supportive environment.
+* Co-op support for developer side projects.
+* Metered access to fediverse services.
+
+### End User Benefits
+
+* Profit sharing, pro-rated for the number of months they were a member that year.
+* Ability to submit product proposals.
+* Stable software services at a reasonable price.
+* Metered access to all services.
 
 ## Requirements for Membership
 
-For each membership class:
+### Developers
 
-How much does a membership share cost?
+* Must complete twenty story points and have them merged into main before submitting for membership.
+* Must submit an application to the Tech peer Review Committee, and be accepted.
+* Must provide proper paperwork before being paid.
 
-What are other non-financial requirements to be a member?
+### End Users
+
+* They must pay their membership fees for any month they want software services.
+* They must be members for the two previous months to receive owner profits or participate in voting.
 
 ## Member Governance Rights
+
+### Developers
+
+* Vote on Tech hires.
+* Can sit on co-op committees.
+* Three board seats
+
+### End Users
+
+* Vote on Tech and Co-op hires.
+* Can sit on co-op committees.
+* Three board seats
+
 
 In a cooperative, each member gets one vote in board elections and in any other votes taken by members, we call this one member, one vote. 
 

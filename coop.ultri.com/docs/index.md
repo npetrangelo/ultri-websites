@@ -9,7 +9,7 @@ hero:
   actions:
     - theme: brand
       text: Ownership Model
-      link: /tech-coop-ownership/
+      link: /ownership/
     - theme: alt
       text: Join the conversation
       link: https://discord.gg/3DhFVkVQ
