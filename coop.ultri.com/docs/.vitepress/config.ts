@@ -34,30 +34,14 @@ export default defineConfig({
     //  }
     ],
 
-    sidebar: {
-      "coop-membership-packages": [
+    sidebar: [
         {
-          text: 'Co-op Information',
+          text: 'Join Now',
           items: [
-            { text: 'Ownership Model', link: '/tech-coop-ownership/' },
-            { text: 'Bylaws', link: '/tech-coop-bylaws/' },
-            { text: 'Membership Options', link: '/tech-coop-membership/' },
-          { text: 'Sign Up', link: 'https://logbook.opensociocracy.org/' }
+            { text: 'Membership Options', link: '/coop-membership-packages/' },
+
         ]
-      }
-    ],
-    "members": [
-      {
-        text: 'Co-op Information',
-        items: [
-          { text: 'Ownership Model', link: '/tech-coop-ownership/' },
-          { text: 'Bylaws', link: '/tech-coop-bylaws/' },
-          { text: 'Membership Options', link: '/tech-coop-membership/' },
-        { text: 'Sign Up', link: 'https://logbook.opensociocracy.org/' }
-      ]
-    }
-  ],
-    "ownership": [
+      },
       {
         text: 'Ownership Model',
         items: [
@@ -70,17 +54,6 @@ export default defineConfig({
           { text: 'Guidance', link: '/tech-coop-ownership/guidance/' },
           { text: 'Investments', link: '/tech-coop-ownership/investments/' },
         ]
-      }
-    ],
-    "about-us": [
-      {
-        text: 'Co-op Information',
-        items: [
-          { text: 'Ownership Model', link: '/tech-coop-ownership/' },
-          { text: 'Bylaws', link: '/tech-coop-bylaws/' },
-          { text: 'Membership Options', link: '/tech-coop-membership/' },
-
-        ]
       },
       {
         text: 'Co-op Projects',
@@ -91,9 +64,7 @@ export default defineConfig({
 
         ]
       }
-    ]
-    },
-
+    ],
     socialLinks: [
       { icon: 'github', link: 'https://github.com/OpenSociocracy' }
     ]
