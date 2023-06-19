@@ -20,5 +20,5 @@
 
 * We want permanent headcount to remain under one employee for every 1500 members.
 * The base salary is $50,000.
-* The max salary multiplier is five. Nobody may have a salry reater than $250,000.
+* The max salary multiplier is five. Nobody may have a salary greater than $250,000.
 * Developer equity earnings have no cap.
