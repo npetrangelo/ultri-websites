@@ -12,6 +12,7 @@ We build software to help good people do great things.
 
 * 3 million co-op
 * 10 million non-profits
+* 20% of the worlds population
 
 ## Serviceable Addressable Market (SAM)
 
