@@ -54,6 +54,7 @@ export default defineConfig({
           { text: 'Guidance', link: '/ownership/guidance/' },
           { text: 'Investments', link: '/ownership/investments/' },
           { text: 'Co-op Bylaws', link: '/bylaws/' },
+          { text: 'Financial Projections', link: '/market/' },
         ]
       },
       {
