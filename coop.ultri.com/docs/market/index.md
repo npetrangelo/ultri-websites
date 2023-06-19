@@ -4,10 +4,29 @@ We build software to help good people do great things.
 
 ## Total Addresseable Market (TAM)
 
+### Target Market
+
 * Our primary markets will be co-ops and non-profits. We are aligned with them, and most implement some form of democratic workplace. 
-* 
+
+### Stats
+
+* 3 million co-op
+* 10 million non-profits
 
 ## Serviceable Addressable Market (SAM)
+
+### Target Market
+
+* Co-ops, non-profits especially in transition.
+* Startups with at least 5 people, some of them remote.
+* Organizations in the US and English speaking countries.
+
+### Stats
+
+* 40,000 US Co-ops
+* 1.5 millions non-profits
+* 70,000 startups
+
 
 ## Serviceable Obtainable Market (SOM)
 
@@ -57,3 +76,5 @@ We believe these are reasonable projections based upon viral growth strategies.
 * 100 yearly members
 * 300 business accounts
 * **$1.1 million in revenue**
+
+[Financial Forecast Spreadhseet](https://docs.google.com/spreadsheets/d/18xJKDplZPVuFsoSVLSHCtxYlSw3-EfUYUtzIw6t_Ljg/edit?usp=sharing)
