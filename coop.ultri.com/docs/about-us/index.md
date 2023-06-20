@@ -61,10 +61,6 @@ const founders = [
 
 # About Ultri Co-op
 
-## Top Contributors
-
-<VPTeamMembers size="small" :members="topMembers" />
-
 ## Founding Members
 
 <VPTeamMembers size="small" :members="founders" />
