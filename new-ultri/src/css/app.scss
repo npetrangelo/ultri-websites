@@ -1,5 +1,4 @@
 // app global css in SCSS form
-// app global css in SCSS form
 .dialog-qbar {
   background-color: $primary;
   color: white;
@@ -21,7 +20,12 @@
 .bg-menuheader {
   background: #444 !important;
 }
-.navbar-link {
-  color: white;
+.navbar-brand-link {
+  color: $logo;
+  text-decoration: none;
+}
+
+.navbar-text-link {
+  color: $primary;
   text-decoration: none;
 }

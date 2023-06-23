@@ -2,8 +2,9 @@
   <router-view />
 </template>
 
-<script>
+<script setup>
 import { defineComponent } from 'vue'
+import { useQuasar } from 'quasar'
 
 import SuperTokens from 'supertokens-web-js';
 import Session from 'supertokens-web-js/recipe/session';
@@ -21,7 +22,8 @@ SuperTokens.init({
     ],
 });
 
-export default defineComponent({
-  name: 'App'
-})
+const $q = useQuasar()
+
+console.log($q.dark.isActive)
+
 </script>

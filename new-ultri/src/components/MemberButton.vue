@@ -1,5 +1,5 @@
 <template>
-  <q-btn-dropdown flat dense no-caps dropdown-icon="mdi-account">
+  <q-btn-dropdown flat dense no-caps dropdown-icon="mdi-account" >
     <q-list>
 
       <!--
@@ -13,14 +13,12 @@
       >
         <q-card>
           <q-card-section>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, eius reprehenderit eos corrupti
-            commodi magni quaerat ex numquam, dolorum officiis modi facere maiores architecto suscipit iste
-            eveniet doloribus ullam aliquid.
+
           </q-card-section>
         </q-card>
       </q-expansion-item>
       -->
-
+      <!--
       <q-item clickable>
         <q-item-section avatar>
           <q-icon name="mdi-web" color="primary" />
@@ -39,7 +37,8 @@
           />
         </q-item-section>
       </q-item>
-
+      -->
+      <!--
       <q-item clickable v-close-popup @click="theme.toggleDarkMode()">
         <q-item-section avatar>
           <q-icon name="mdi-theme-light-dark" color="primary"/>
@@ -48,6 +47,7 @@
           <q-item-label>{{ $t('nav.darkMode') }}</q-item-label>
         </q-item-section>
       </q-item>
+      -->
 
       <q-item clickable v-close-popup v-if="!auth.isSignedIn" @click="triggerSignInDialog()">
         <q-item-section avatar>

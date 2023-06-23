@@ -3,8 +3,22 @@ const routes = [
   {
     path: '/',
     component: () => import('layouts/MainLayout.vue'),
+    meta: {
+      drawer: 'Homepage'
+    },
     children: [
       {  name: 'home', path: '', component: () => import('pages/IndexPage.vue') }
+    ]
+  },
+
+  {
+    path: '/pricing',
+    component: () => import('layouts/MainLayout.vue'),
+    meta: {
+      drawer: 'Homepage'
+    },
+    children: [
+      {  name: 'pricing', path: '', component: () => import('pages/PricingPage.vue') }
     ]
   },
 
