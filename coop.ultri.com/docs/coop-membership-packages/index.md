@@ -9,7 +9,7 @@
 
 **Yearly $200**
 
-Monthy user benefits plus:
+Monthly user benefits plus:
 
 * Community on our Fediverse server.
 * Branded entrance to the Logbook.

@@ -1,7 +1,10 @@
 <template>
   <q-page class="row fit">
     <div class="row fit">
-      <div class="col-xs-12 col-sm-6 col-md-3 text-center">Free<br />No Benefits</div>
+      <div class="col-xs-12 col-sm-6 col-md-3 text-center">
+        <div>Free<br />No Benefits</div>
+
+      </div>
       <div class="col-xs-12 col-sm-6 col-md-3 text-center">Monthly<br />Co-op</div>
       <div class="col-xs-12 col-sm-6 col-md-3 text-center">Yearly<br />Co-op</div>
       <div class="col-xs-12 col-sm-6 col-md-3 text-center">Business<br />Co-op</div>
