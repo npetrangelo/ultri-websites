@@ -4,32 +4,38 @@
       <div class="col-xs-12 col-sm-6 col-md-3 text-center q-pa-md">
         <q-card>
           <q-card-section class="free-head text-bold"
-            >Free
-            <br />No Co-op Benefits
-            <br /><span class="text-h5">$0</span></q-card-section
+            >Free <br />No Co-op Benefits <br /><span class="text-h5"
+              >$0</span
+            ></q-card-section
           >
           <q-card-section>
-            <div class="row fill-width">
-              <ul class="text-left">
-                <li>NO co-op voting rights</li>
-                <li>NO co-op profit sharing</li>
-                <li>Access to Logbook tools</li>
-                <li>NO ability to save work</li>
-                <li>Access to member projects</li>
-              </ul>
-            </div>
+            <ul class="text-left">
+              <li>NO co-op voting rights</li>
+              <li>NO co-op profit sharing</li>
+              <li>Access to Logbook tools</li>
+              <li>NO ability to save work</li>
+              <li>Access to member projects</li>
+            </ul>
           </q-card-section>
+          <q-card-actions class="justify-center q-pb-lg">
+            <q-btn
+              rounded
+              label="Join Now"
+              color="primary"
+              @click="triggerSignInDialog()"
+            ></q-btn>
+          </q-card-actions>
         </q-card>
       </div>
       <div class="col-xs-12 col-sm-6 col-md-3 text-center q-pa-md">
         <q-card>
           <q-card-section class="monthly-head text-bold"
-            >Monthly<br />Co-op Membership
-            <br /><span class="text-h5">$20</span>
-            </q-card-section
-          >
+            >Monthly<br />Co-op Membership <br /><span class="text-h5"
+              >$20</span
+            >
+          </q-card-section>
           <q-card-section>
-            <div class="row fill-width">
+            <div>
               <ul class="text-left">
                 <li>Full voting rights</li>
                 <li>Yearly profit sharing</li>
@@ -39,15 +45,25 @@
               </ul>
             </div>
           </q-card-section>
+          <q-card-actions class="justify-center q-pb-lg">
+            <q-btn
+              rounded
+              label="Join Now"
+              color="primary"
+              @click="triggerSignInDialog()"
+            ></q-btn>
+          </q-card-actions>
         </q-card>
       </div>
       <div class="col-xs-12 col-sm-6 col-md-3 text-center q-pa-md">
         <q-card>
           <q-card-section class="yearly-head text-bold"
-            >Yearly<br />Co-op Membership<br /><span class="text-h5">$200</span></q-card-section
+            >Yearly<br />Co-op Membership<br /><span class="text-h5"
+              >$200</span
+            ></q-card-section
           >
           <q-card-section>
-            <div class="row fill-width">
+            <div>
               <ul class="text-left">
                 <li>All monthly benefits</li>
                 <li>Customized Logbook entrance</li>
@@ -57,16 +73,26 @@
               </ul>
             </div>
           </q-card-section>
+          <q-card-actions class="justify-center q-pb-lg">
+            <q-btn
+              rounded
+              label="Join Now"
+              color="primary"
+              @click="triggerSignInDialog()"
+            ></q-btn>
+          </q-card-actions>
         </q-card>
       </div>
       <div class="col-xs-12 col-sm-6 col-md-3 text-center q-pa-md">
         <q-card>
           <q-card>
             <q-card-section class="organization-head text-bold"
-              >Organization<br />Co-op Memberships<br /><span class="text-h5">$1000</span></q-card-section
+              >Organization<br />Co-op Memberships<br /><span class="text-h5"
+                >$1000</span
+              ></q-card-section
             >
             <q-card-section>
-              <div class="row fill-width">
+              <div>
                 <ul class="text-left">
                   <li>5 individual memberships</li>
                   <li>Shared access between members</li>
@@ -76,6 +102,14 @@
                 </ul>
               </div>
             </q-card-section>
+            <q-card-actions class="justify-center q-pb-lg">
+              <q-btn
+                rounded
+                label="Join Now"
+                color="primary"
+                @click="triggerSignInDialog()"
+              ></q-btn>
+            </q-card-actions>
           </q-card>
         </q-card>
       </div>
@@ -84,9 +118,11 @@
           <q-card>
             <q-card>
               <q-card-section class="lifetime-head text-bold"
-                >Lifetime<br />Membership<br /><span class="text-h5">$2000</span></q-card-section
+                >Lifetime<br />Membership<br /><span class="text-h5"
+                  >$2000</span
+                ></q-card-section
               >
-              <q-card-section >
+              <q-card-section>
                 <div class="row fill-width text-center justify-center">
                   <ul class="text-left">
                     <li>Full individual benefits, FOREVER</li>
@@ -97,6 +133,14 @@
                   </ul>
                 </div>
               </q-card-section>
+              <q-card-actions class="justify-center q-pb-lg">
+                <q-btn
+                  rounded
+                  label="Join Now"
+                  color="primary"
+                  @click="triggerSignInDialog()"
+                ></q-btn>
+              </q-card-actions>
             </q-card>
           </q-card>
         </div>
