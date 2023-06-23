@@ -1,8 +1,8 @@
 <template>
   <q-page class="row fit">
     <div class="row fit q-px-md">
-      <div class="col-xs-12 col-sm-6 col-md-3 text-center q-pa-md">
-        <q-card>
+      <div class="col-xs-12 col-sm-6 col-md-3 text-center q-pa-md flex">
+        <q-card class="fit">
           <q-card-section class="free-head text-bold"
             >Free <br />No Co-op Benefits <br /><span class="text-h5"
               >$0</span
@@ -27,8 +27,8 @@
           </q-card-actions>
         </q-card>
       </div>
-      <div class="col-xs-12 col-sm-6 col-md-3 text-center q-pa-md">
-        <q-card>
+      <div class="col-xs-12 col-sm-6 col-md-3 text-center q-pa-md flex">
+        <q-card class="fit">
           <q-card-section class="monthly-head text-bold"
             >Monthly<br />Co-op Membership <br /><span class="text-h5"
               >$20</span
@@ -55,8 +55,8 @@
           </q-card-actions>
         </q-card>
       </div>
-      <div class="col-xs-12 col-sm-6 col-md-3 text-center q-pa-md">
-        <q-card>
+      <div class="col-xs-12 col-sm-6 col-md-3 text-center q-pa-md flex">
+        <q-card class="fit">
           <q-card-section class="yearly-head text-bold"
             >Yearly<br />Co-op Membership<br /><span class="text-h5"
               >$200</span
@@ -83,8 +83,8 @@
           </q-card-actions>
         </q-card>
       </div>
-      <div class="col-xs-12 col-sm-6 col-md-3 text-center q-pa-md">
-        <q-card>
+      <div class="col-xs-12 col-sm-6 col-md-3 text-center q-pa-md flex">
+        <q-card class="fit">
           <q-card>
             <q-card-section class="organization-head text-bold"
               >Organization<br />Co-op Memberships<br /><span class="text-h5"
@@ -116,7 +116,7 @@
       <div class="row full-width fit">
         <div class="col-12 text-center fit q-pa-md">
           <q-card>
-            <q-card>
+            <q-card class="fit">
               <q-card-section class="lifetime-head text-bold"
                 >Lifetime<br />Membership<br /><span class="text-h5"
                   >$2000</span
