@@ -4,7 +4,7 @@
       <div class="col-xs-12 col-sm-6 col-md-3 text-center q-pa-md flex">
         <q-card class="fit">
           <q-card-section class="free-head text-bold"
-            >Free <br />No Co-op Benefits <br /><span class="text-h5"
+            >Free <br />No Co-op Benefits <br /><span class="text-h5 text-bold"
               >$0</span
             ></q-card-section
           >
@@ -30,7 +30,7 @@
       <div class="col-xs-12 col-sm-6 col-md-3 text-center q-pa-md flex">
         <q-card class="fit">
           <q-card-section class="monthly-head text-bold"
-            >Monthly<br />Co-op Membership <br /><span class="text-h5"
+            >Monthly<br />Co-op Membership <br /><span class="text-h5 text-bold"
               >$20</span
             >
           </q-card-section>
@@ -58,7 +58,7 @@
       <div class="col-xs-12 col-sm-6 col-md-3 text-center q-pa-md flex">
         <q-card class="fit">
           <q-card-section class="yearly-head text-bold"
-            >Yearly<br />Co-op Membership<br /><span class="text-h5"
+            >Yearly<br />Co-op Membership<br /><span class="text-h5 text-bold"
               >$200</span
             ></q-card-section
           >
@@ -87,7 +87,7 @@
         <q-card class="fit">
           <q-card>
             <q-card-section class="organization-head text-bold"
-              >Organization<br />Co-op Memberships<br /><span class="text-h5"
+              >Organization<br />Co-op Memberships<br /><span class="text-h5 text-bold"
                 >$1000</span
               ></q-card-section
             >
@@ -118,7 +118,7 @@
           <q-card>
             <q-card class="fit">
               <q-card-section class="lifetime-head text-bold"
-                >Lifetime<br />Membership<br /><span class="text-h5"
+                >Lifetime<br />Membership<br /><span class="text-h5 text-bold"
                   >$2000</span
                 ></q-card-section
               >
