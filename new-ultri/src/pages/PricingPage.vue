@@ -2,7 +2,7 @@
   <q-page class="row fit">
     <div class="row fit q-px-lg q-ma-sm text-h4 text-bold">Membership Options</div>
     <div class="row fit q-px-md">
-      <div class="col-xs-12 col-sm-6 col-md-3 text-center q-pa-md flex">
+      <div class="col-xs-12 col-sm-6 col-md-3 text-center q-pa-md flex vertical-top">
         <q-card class="fit">
           <q-card-section class="free-head text-bold"
             >Free <br />No Co-op Benefits <br /><span class="text-h5 text-bold"
