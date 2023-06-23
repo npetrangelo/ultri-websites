@@ -32,7 +32,7 @@
         <q-card class="fit">
           <q-card-section class="monthly-head text-bold"
             >Monthly<br />Co-op Membership <br /><span class="text-h5 text-bold"
-              >$20</span
+              >$20 / month</span
             >
           </q-card-section>
           <q-card-section>
@@ -60,7 +60,7 @@
         <q-card class="fit">
           <q-card-section class="yearly-head text-bold"
             >Yearly<br />Co-op Membership<br /><span class="text-h5 text-bold"
-              >$200</span
+              >$200 / year</span
             ></q-card-section
           >
           <q-card-section>
@@ -89,7 +89,7 @@
           <q-card>
             <q-card-section class="organization-head text-bold"
               >Organization<br />Co-op Memberships<br /><span class="text-h5 text-bold"
-                >$1000</span
+                >$1000 / year</span
               ></q-card-section
             >
             <q-card-section>
@@ -120,7 +120,7 @@
             <q-card class="fit">
               <q-card-section class="lifetime-head text-bold"
                 >Lifetime<br />Membership<br /><span class="text-h5 text-bold"
-                  >$2000</span
+                  >$2000 onetime</span
                 ></q-card-section
               >
               <q-card-section>
