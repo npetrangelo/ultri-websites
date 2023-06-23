@@ -69,7 +69,7 @@
                 <li>All monthly benefits</li>
                 <li>Customized Logbook entrance</li>
                 <li>Ability to run for board seat</li>
-                <li>Can have a circle role</li>
+                <li>Able to have a circle role</li>
                 <li>Free domain your first year</li>
               </ul>
             </div>
