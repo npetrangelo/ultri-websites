@@ -98,7 +98,7 @@
                   <li>5 individual memberships</li>
                   <li>Shared access between members</li>
                   <li>Free yearly domain -or- hosting</li>
-                  <li>Early access to products from our labs</li>
+                  <li>Early access to lab products</li>
                   <li>Priority Support</li>
                 </ul>
               </div>
@@ -129,8 +129,8 @@
                     <li>Full individual benefits, FOREVER</li>
                     <li>A seat on the Ultri Board of Directors</li>
                     <li>Prioritization of the features you want</li>
-                    <li>Early acces to products from our labs</li>
-                    <li>Special, premanent, mention on the website</li>
+                    <li>Early acces to lab products</li>
+                    <li>Special, permanent, mention on the website</li>
                   </ul>
                 </div>
               </q-card-section>
