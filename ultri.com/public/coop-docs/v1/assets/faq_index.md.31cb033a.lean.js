@@ -1,0 +1,1 @@
+import{_ as e,o,c as a,O as c}from"./chunks/framework.1f79dc3f.js";const y=JSON.parse('{"title":"OpenSociocracy FAQ","description":"","frontmatter":{},"headers":[],"relativePath":"faq/index.md","filePath":"faq/index.md"}'),r={name:"faq/index.md"},t=c("",9),s=[t];function i(n,h,l,d,f,p){return o(),a("div",null,s)}const m=e(r,[["render",i]]);export{y as __pageData,m as default};
