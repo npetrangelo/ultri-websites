@@ -23,6 +23,17 @@ const routes = [
   },
 
   {
+    path: '/logbook',
+    component: () => import('layouts/MainLayout.vue'),
+    meta: {
+      drawer: 'Homepage'
+    },
+    children: [
+      {  name: 'pricing', path: '', component: () => import('pages/LogbookPage.vue') }
+    ]
+  },
+
+  {
     path: '/forms/:formName',
     component: () => import('layouts/MainLayout.vue'),
     children: [
