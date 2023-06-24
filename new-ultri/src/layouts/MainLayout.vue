@@ -109,8 +109,6 @@ import OrgCreateLogbookEntryDialog from "../components/OrgCreateLogbookEntryDial
 
 const $q = useQuasar()
 
-console.log($q.dark.isActive)
-
 const route = useRoute();
 const auth = useAuthStore();
 const color = useColorStore();
@@ -131,8 +129,6 @@ const leftDrawerOpen = ref(false);
 const toggleLeftDrawer = () => {
   leftDrawerOpen.value = !leftDrawerOpen.value;
 };
-
-console.log(color.darkMode)
 
 </script>
 

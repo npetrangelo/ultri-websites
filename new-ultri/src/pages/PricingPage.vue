@@ -4,7 +4,7 @@
     <div class="row fit q-px-md">
       <div class="col-xs-12 col-sm-6 col-md-3 text-center q-pa-md flex vertical-top">
         <q-card class="fit">
-          <q-card-section class="free-head text-bold"
+          <q-card-section :class="color.darkMode ? 'free-head-dk' : 'free-head-lt' + ' text-bold'"
             >Free <br />No Co-op Benefits <br /><span class="text-h5 text-bold"
               >$0</span
             ></q-card-section
@@ -30,7 +30,7 @@
       </div>
       <div class="col-xs-12 col-sm-6 col-md-3 text-center q-pa-md flex">
         <q-card class="fit">
-          <q-card-section class="monthly-head text-bold"
+          <q-card-section :class="color.darkMode ? 'monthly-head-dk' : 'monthly-head-lt' + ' text-bold'"
             >Monthly<br />Co-op Membership <br /><span class="text-h5 text-bold"
               >$20 / month</span
             >
@@ -58,7 +58,7 @@
       </div>
       <div class="col-xs-12 col-sm-6 col-md-3 text-center q-pa-md flex">
         <q-card class="fit">
-          <q-card-section class="yearly-head text-bold"
+          <q-card-section :class="color.darkMode ? 'yearly-head-dk' : 'yearly-head-lt' + ' text-bold'"
             >Yearly<br />Co-op Membership<br /><span class="text-h5 text-bold"
               >$200 / year</span
             ></q-card-section
@@ -87,7 +87,7 @@
       <div class="col-xs-12 col-sm-6 col-md-3 text-center q-pa-md flex">
         <q-card class="fit">
           <q-card>
-            <q-card-section class="organization-head text-bold"
+            <q-card-section :class="color.darkMode ? 'organization-head-dk' : 'organization-head-lt' + ' text-bold'"
               >Organization<br />Co-op Memberships<br /><span class="text-h5 text-bold"
                 >$1000 / year</span
               ></q-card-section
@@ -118,7 +118,7 @@
         <div class="col-12 text-center fit q-pa-md">
           <q-card>
             <q-card class="fit">
-              <q-card-section class="lifetime-head text-bold"
+              <q-card-section :class="color.darkMode ? 'lifetime-head-dk' : 'lifetime-head-lt' + ' text-bold'"
                 >Lifetime<br />Membership<br /><span class="text-h5 text-bold"
                   >$2000 / onetime</span
                 ></q-card-section
@@ -154,8 +154,10 @@
 import { useQuasar } from "quasar";
 import { useAuthStore } from "../stores/auth";
 import { ref } from "vue";
+import { useColorStore } from "../stores/color";
 
 const auth = useAuthStore();
+const color = useColorStore();
 
 const plan = ref("yearly");
 
@@ -171,20 +173,35 @@ console.log($q.dark.isActive);
 </script>
 
 <style lang="scss">
-.free-head {
+.free-head-lt {
   background-color: $tnt-p-90;
 }
-.monthly-head {
+.free-head-dk {
+  background-color: $shd-p-20;
+}
+.monthly-head-lt {
   background-color: $tnt-p-80;
 }
-.yearly-head {
+.monthly-head-dk {
+  background-color: $shd-p-30;
+}
+.yearly-head-lt {
   background-color: $tnt-p-70;
 }
-.organization-head {
+.yearly-head-dk {
+  background-color: $shd-p-40;
+}
+.organization-head-lt {
   background-color: $tnt-p-60;
 }
-.lifetime-head {
+.organization-head-dk {
+  background-color: $shd-p-50;
+}
+.lifetime-head-lt {
   background-color: $tnt-p-50;
+}
+.lifetime-head-dk {
+  background-color: $shd-p-60;
 }
 .price-box {
   border-color: $tnt-p-90;
