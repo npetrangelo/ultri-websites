@@ -16,21 +16,7 @@
 </template>
 
 <script setup>
-import { useQuasar } from "quasar";
-import { useAuthStore } from "../stores/auth";
-import { ref } from "vue";
-import { useColorStore } from "../stores/color";
 
-const auth = useAuthStore();
-const color = useColorStore();
-
-const plan = ref("yearly");
-
-const triggerSignInDialog = async () => {
-  auth.setTargetUrl("/member");
-  auth.setSignInRequired(true);
-  console.log(auth.targetUrl);
-};
 
 </script>
 
