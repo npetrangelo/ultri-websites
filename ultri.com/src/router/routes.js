@@ -26,10 +26,10 @@ const routes = [
     path: '/logbook',
     component: () => import('layouts/MainLayout.vue'),
     meta: {
-      drawer: 'Homepage'
+      drawer: 'Logbook'
     },
     children: [
-      {  name: 'pricing', path: '', component: () => import('pages/LogbookPage.vue') }
+      {  name: 'logbook', path: '', component: () => import('pages/LogbookPage.vue') }
     ]
   },
 
