@@ -10,8 +10,6 @@
             <q-tooltip>{{$t('nav.close')}} </q-tooltip>
           </q-btn>
         </q-bar>
-        <q-card><q-card-section class="jusify-center text-h2 -q-ma-xl">Coming soon!</q-card-section></q-card>
-        <!--
         <q-card-section>
           <div class="dialog-header row">
             <div class="col">
@@ -38,7 +36,6 @@
             :disable="!sendLinkEnabled"
           ></q-btn>
         </q-card-actions>
-        -->
       </q-form>
     </q-card>
     <q-card class="q-dialog-plugin" v-if="view == 'enterCode'">
