@@ -12,7 +12,7 @@ import Passwordless from 'supertokens-web-js/recipe/passwordless'
 
 SuperTokens.init({
     appInfo: {
-        apiDomain: "http://localhost",
+        apiDomain: "https://api.service.opensociocracy.org",
         apiBasePath: "/auth",
         appName: "Ultri",
     },
