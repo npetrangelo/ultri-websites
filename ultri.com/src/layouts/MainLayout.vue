@@ -32,7 +32,7 @@
           <router-link to="/benefits" class="navbar-text-link" color="primary">{{ $t("nav.benefits") }}</router-link>
           </span> -->
           <span class="q-pr-lg">
-          <router-link to="/co-op" class="navbar-text-link" color="primary">{{ $t("nav.co-op") }}</router-link>
+          <router-link to="/co-op/" class="navbar-text-link" color="primary">{{ $t("nav.co-op") }}</router-link>
           </span>
 
           <span class="q-pr-lg">
