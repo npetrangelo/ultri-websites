@@ -30,7 +30,7 @@ export default defineConfig({
     //    ariaLabel: 'Project Menu',
     //    items: [
     //      { text: 'Sociocracy Handbook', link: 'https://handbook.opensociocracy.org/' },
-    //      { text: 'Sociocracy Logbook', link: 'https://www.ultri.com/logbook/' }
+    //      { text: 'Sociocracy Logbook', link: 'https://www.ultri.com/logbook' }
     //    ]
     //  }
     ],
