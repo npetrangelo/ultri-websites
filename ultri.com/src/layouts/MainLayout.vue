@@ -73,9 +73,10 @@
       <LogbookDrawer v-if="route.meta.drawer == 'Logbook'"></LogbookDrawer>
     </q-drawer>
 
-    <q-footer elevated>
-        <q-toolbar>
-          <q-toolbar-title>Footer</q-toolbar-title>
+    <q-footer >
+        <q-toolbar  :class="color.darkMode ? 'u-navbar-dark' : 'u-navbar-light'">
+          <q-space /><a href="https://www.opensociocracy.org" class="navbar-text-link">OpenSociocracy</a>
+          <q-space /><a href="https://www.linkedin.com/company/ultri/" class="navbar-text-link">LinkedIn</a><q-space /><div class="text-body2 q-pr-md">Copyright &copy; 2023 Ultri</div>
         </q-toolbar>
       </q-footer>
 

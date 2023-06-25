@@ -10,9 +10,16 @@ import SuperTokens from 'supertokens-web-js';
 import Session from 'supertokens-web-js/recipe/session';
 import Passwordless from 'supertokens-web-js/recipe/passwordless'
 
+let apiHost;
+if (process.env.DEV) {
+  apiHost = 'http://localhost'
+}
+if (process.env.PROD) {
+  apiHost = 'https://api.service.ultri.com'
+}
 SuperTokens.init({
     appInfo: {
-        apiDomain: "https://api.service.opensociocracy.org",
+        apiDomain: apiHost,
         apiBasePath: "/auth",
         appName: "Ultri",
     },
