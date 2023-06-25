@@ -30,7 +30,7 @@ export default defineConfig({
     //    ariaLabel: 'Project Menu',
     //    items: [
     //      { text: 'Sociocracy Handbook', link: 'https://handbook.opensociocracy.org/' },
-    //      { text: 'Sociocracy Logbook', link: 'https://logbook.opensociocracy.org/' }
+    //      { text: 'Sociocracy Logbook', link: 'https://www.ultri.com/logbook/' }
     //    ]
     //  }
     ],
@@ -62,10 +62,8 @@ export default defineConfig({
         text: 'Co-op Projects',
         items: [
           { text: 'Sociocracy Handbook', link: 'https://handbook.opensociocracy.org/' },
-          { text: 'Sociocracy Logbook', link: 'https://logbook.opensociocracy.org/' },
+          { text: 'Sociocracy Logbook', link: 'https://www.ultri.com/logbook/' },
           { text: 'Circle Builder', link: 'https://github.com/OpenSociocracy/circle-builder' },
-          { text: 'Izzup - Fediverse', link: 'https://www.izzup.com' },
-
         ]
       }
     ],
