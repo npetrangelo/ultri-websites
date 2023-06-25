@@ -18,6 +18,7 @@ export default {
   'nav.share': 'Share',
   'nav.sell': 'Sell',
   'nav.govern': 'Govern',
-  'nav.secure': 'Secure'
+  'nav.secure': 'Secure',
+  'nav.co-op': 'Co-op'
 };
 
