@@ -19,7 +19,7 @@ export default defineConfig({
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: 'Home', link: 'https://www.ultri.com' },
+      { text: 'Home', link: '../' },
       { text: 'About Us', link: '/about-us/' },
       { text: 'Join', link: '/coop-membership-packages/' },
       { text: 'Own It', link: '/ownership/' },
@@ -62,7 +62,7 @@ export default defineConfig({
         text: 'Co-op Projects',
         items: [
           { text: 'Sociocracy Handbook', link: 'https://handbook.opensociocracy.org/' },
-          { text: 'Sociocracy Logbook', link: 'https://www.ultri.com/logbook/' },
+          { text: 'Sociocracy Logbook', link: 'https://www.ultri.com/logbook' },
           { text: 'Circle Builder', link: 'https://github.com/OpenSociocracy/circle-builder' },
         ]
       }
