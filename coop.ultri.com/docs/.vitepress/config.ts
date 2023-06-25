@@ -3,6 +3,7 @@ import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "Ultri",
+  base: "/coop-docs/v1/",
   description: "Build it - Use it - Own it",
   head: [
     [

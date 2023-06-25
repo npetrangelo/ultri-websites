@@ -10,7 +10,11 @@
     "format": "prettier --write \"**/*.{js,vue,scss,html,md,json}\" --ignore-path .gitignore",
     "test": "echo \"No test specified\" && exit 0",
     "dev": "quasar dev",
-    "build": "quasar build"
+    "build": "quasar build",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:pub": "vitepress build docs && rm -Rf public/co-op/* && cp -Rf docs/.vitepress/dist/* public/co-op/",
+    "docs:preview": "vitepress preview docs"
   },
   "dependencies": {
     "@quasar/extras": "^1.0.0",
@@ -33,7 +37,8 @@
     "eslint-config-prettier": "^8.1.0",
     "eslint-plugin-vue": "^9.0.0",
     "postcss": "^8.4.14",
-    "prettier": "^2.5.1"
+    "prettier": "^2.5.1",
+    "vitepress": "^1.0.0-beta.1"
   },
   "engines": {
     "node": "^18 || ^16 || ^14.19",

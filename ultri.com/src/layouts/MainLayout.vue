@@ -73,14 +73,22 @@
       <LogbookDrawer v-if="route.meta.drawer == 'Logbook'"></LogbookDrawer>
     </q-drawer>
 
-    <!-- DIALOGS -->
+    <q-footer elevated>
+        <q-toolbar>
+          <q-toolbar-title>Footer</q-toolbar-title>
+        </q-toolbar>
+      </q-footer>
+
+    <!-- PAGE -->
     <q-page-container>
+      <!-- DIALOGS -->
       <PasswordlessAuthDialog
         v-model="auth.signInRequired"
       ></PasswordlessAuthDialog>
       <WelcomeDialog v-model="auth.isNewMember"></WelcomeDialog>
       <OrgCreateLogbookEntryDialog v-model="org.showOrgCreateLogbookEntryDialog"></OrgCreateLogbookEntryDialog>
       <OrgCreateDialog v-model="org.showOrgCreateDialog"></OrgCreateDialog>
+      <!-- PAGE VIEW -->
       <router-view />
     </q-page-container>
   </q-layout>
