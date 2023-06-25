@@ -19,7 +19,7 @@ export default defineConfig({
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: 'Home', link: '/' },
+      { text: 'Home', link: 'https://www.ultri.com/' },
       { text: 'About Us', link: '/about-us/' },
       { text: 'Join', link: '/coop-membership-packages/' },
       { text: 'Own It', link: '/ownership/' },
