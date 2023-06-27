@@ -1,69 +1,87 @@
-
 const routes = [
   {
-    path: '/',
-    component: () => import('layouts/MainLayout.vue'),
+    path: "/",
+    component: () => import("layouts/MainLayout.vue"),
     meta: {
-      drawer: 'Homepage'
+      drawer: "Homepage"
     },
     children: [
-      {  name: 'home', path: '', component: () => import('pages/IndexPage.vue') }
+      { name: "home", path: "", component: () => import("pages/IndexPage.vue") }
     ]
   },
 
   {
-    path: '/pricing',
-    component: () => import('layouts/MainLayout.vue'),
+    path: "/pricing",
+    component: () => import("layouts/MainLayout.vue"),
     meta: {
-      drawer: 'Homepage'
+      drawer: "Homepage"
     },
     children: [
-      {  name: 'pricing', path: '', component: () => import('pages/PricingPage.vue') }
+      {
+        name: "pricing",
+        path: "",
+        component: () => import("pages/PricingPage.vue")
+      }
     ]
   },
 
   {
-    path: '/logbook',
-    component: () => import('layouts/MainLayout.vue'),
+    path: "/orgs",
+    component: () => import("layouts/MainLayout.vue"),
     meta: {
-      drawer: 'Logbook'
+      drawer: "Logbook"
     },
     children: [
-      {  name: 'logbook', path: '', component: () => import('pages/LogbookPage.vue') }
+      { name: "orgs", path: "", component: () => import("pages/OrgsPage.vue") }
     ]
   },
 
   {
-    path: '/forms/:formName',
-    component: () => import('layouts/MainLayout.vue'),
+    path: "/logbook",
+    component: () => import("layouts/MainLayout.vue"),
+    meta: {
+      drawer: "Logbook"
+    },
     children: [
-      { path: '', component: () => import('pages/FormWrapperPage.vue') }
+      {
+        name: "logbook",
+        path: "",
+        component: () => import("pages/LogbookPage.vue")
+      }
     ]
   },
 
   {
-    path: '/org/:orgUid',
-    component: () => import('layouts/MainLayout.vue'),
+    path: "/forms/:formName",
+    component: () => import("layouts/MainLayout.vue"),
     children: [
-      { path: '', component: () => import('pages/OrgHomePage.vue') }
+      { path: "", component: () => import("pages/FormWrapperPage.vue") }
     ]
   },
 
   {
-    path: '/stores',
-    component: () => import('layouts/MainLayout.vue'),
-    children: [
-      { path: '', component: () => import('pages/StoresDebugPage.vue') }
-    ]
+    path: "/org/:orgUid",
+    meta: {
+      drawer: "Logbook"
+    },
+    component: () => import("layouts/MainLayout.vue"),
+    children: [{ path: "", component: () => import("pages/OrgHomePage.vue") }]
   },
 
+  {
+    path: "/stores",
+    component: () => import("layouts/MainLayout.vue"),
+    children: [
+      { path: "", component: () => import("pages/StoresDebugPage.vue") }
+    ]
+  },
 
   // Always leave this as last one,
   // but you can also remove it
   {
-    path: '/:catchAll(.*)*',
-    component: () => import('pages/ErrorNotFound.vue')
+    path: "/:catchAll(.*)*",
+    component: () => import("pages/ErrorNotFound.vue")
   }
-]
+];
 
-export default routes
+export default routes;

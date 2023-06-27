@@ -1,7 +1,6 @@
 <template>
-  <q-btn-dropdown flat dense no-caps dropdown-icon="mdi-account" >
+  <q-btn-dropdown flat dense no-caps dropdown-icon="mdi-account">
     <q-list>
-
       <!--
       <q-expansion-item
         expand-separator
@@ -48,22 +47,40 @@
         </q-item-section>
       </q-item>
       -->
-
-      <q-item clickable v-close-popup v-if="!auth.isSignedIn" @click="triggerSignInDialog()">
+      <q-item clickable v-close-popup v-if="auth.isSignedIn" to="/orgs">
         <q-item-section avatar>
-          <q-icon name="mdi-login" color="primary"/>
+          <q-icon name="mdi-office-building" color="primary" />
         </q-item-section>
         <q-item-section>
-          <q-item-label>{{ $t('nav.signIn') }}</q-item-label>
+          <q-item-label>{{ $t("nav.organizations") }}</q-item-label>
         </q-item-section>
       </q-item>
 
-      <q-item clickable v-close-popup v-if="auth.isSignedIn" @click=" auth.signOut('/');">
+      <q-item
+        clickable
+        v-close-popup
+        v-if="!auth.isSignedIn"
+        @click="triggerSignInDialog()"
+      >
         <q-item-section avatar>
-          <q-icon name="mdi-logout" color="primary"/>
+          <q-icon name="mdi-login" color="primary" />
         </q-item-section>
         <q-item-section>
-          <q-item-label>{{ $t('nav.signOut') }}</q-item-label>
+          <q-item-label>{{ $t("nav.signIn") }}</q-item-label>
+        </q-item-section>
+      </q-item>
+
+      <q-item
+        clickable
+        v-close-popup
+        v-if="auth.isSignedIn"
+        @click="auth.signOut('/')"
+      >
+        <q-item-section avatar>
+          <q-icon name="mdi-logout" color="primary" />
+        </q-item-section>
+        <q-item-section>
+          <q-item-label>{{ $t("nav.signOut") }}</q-item-label>
         </q-item-section>
       </q-item>
     </q-list>
@@ -71,15 +88,15 @@
 </template>
 
 <script setup language="ts">
-import { useAuthStore } from '../stores/auth';
-import { useThemeStore } from '../stores/theme';
+import { useAuthStore } from "../stores/auth";
+import { useThemeStore } from "../stores/theme";
 
-import { useQuasar } from 'quasar';
-import { useI18n } from 'vue-i18n';
+import { useQuasar } from "quasar";
+import { useI18n } from "vue-i18n";
 
-import { useRouter } from 'vue-router';
+import { useRouter } from "vue-router";
 
-import { ref} from 'vue';
+import { ref } from "vue";
 
 const router = useRouter();
 
@@ -93,15 +110,15 @@ theme.$subscribe((mutation, state) => {
   $q.dark.set(state.darkMode);
 });
 
-const { locale } = useI18n({ useScope: 'global' });
+const { locale } = useI18n({ useScope: "global" });
 
 const locales = [
-  { value: 'en-US', label: 'English' },
-  { value: 'es', label: 'Español' },
+  { value: "en-US", label: "English" },
+  { value: "es", label: "Español" },
 ];
 
 const triggerSignInDialog = async () => {
-  auth.setTargetUrl('/');
+  auth.setTargetUrl("/");
   auth.setSignInRequired(true);
-}
+};
 </script>

@@ -1,8 +1,7 @@
 import { defineStore } from "pinia";
 import { useStorage } from "@vueuse/core";
-import { nanoid } from "nanoid";
 import { ref } from "vue";
-
+import { api } from "boot/axios";
 
 export const useOrgStore = defineStore("org", {
   state: () => ({
@@ -16,7 +15,7 @@ export const useOrgStore = defineStore("org", {
     fetching: false,
     showOrgCreateDialog: false,
     showOrgCreateLogbookEntryDialog: false,
-    offline: new Map(),
+    offline: new Map()
   }),
   getters: {
     hasOrgs(state) {
@@ -38,14 +37,14 @@ export const useOrgStore = defineStore("org", {
       return false;
     },
     otherOrgs(state) {
-      const notCurrentOrgs = ref(new Map())
-      if(state.currentOrgUid) {
-        state.orgs.forEach(function(value, key) {
-          if(key != state.currentOrgUid) {
-            notCurrentOrgs.value.set(key, value)
-            console.log(value)
+      const notCurrentOrgs = ref(new Map());
+      if (state.currentOrgUid) {
+        state.orgs.forEach(function (value, key) {
+          if (key != state.currentOrgUid) {
+            notCurrentOrgs.value.set(key, value);
+            console.log(value);
           }
-        })
+        });
       }
 
       return notCurrentOrgs;
@@ -53,28 +52,22 @@ export const useOrgStore = defineStore("org", {
   },
   actions: {
     isCurrentDialog(dialogName) {
-      console.log(dialogName)
+      console.log(dialogName);
       return dialogName == this.currentDialog ? true : false;
     },
     async createOrg(name) {
-      // Save it locally in orgs with a local Uid
-      const localOrgUid = nanoid();
-
-      const orgData = {
-        uid: localOrgUid,
-        name: name,
-      };
-
-      this.orgs.set(localOrgUid, orgData);
-
       // POST an org
+      let orgData = {};
+      orgData = await api.post("/orgs", { name: name });
 
-     this.showOrgCreateDialog = null;
+      this.orgs.set(orgUid, orgData);
 
-      return orgData;
+      this.showOrgCreateDialog = null;
+
+      return orgData ? orgData : {};
     },
     async delete(uid) {
-      if(uid == this.currentOrgUid ) {
+      if (uid == this.currentOrgUid) {
         this.currentOrgUid = null;
       }
       this.orgs.delete(uid);
@@ -105,6 +98,6 @@ export const useOrgStore = defineStore("org", {
       this.fetching = false;
       this.showOrgCreateDialog = false;
       this.offline = new Map();
-    },
-  },
+    }
+  }
 });

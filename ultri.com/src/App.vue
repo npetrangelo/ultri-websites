@@ -3,34 +3,35 @@
 </template>
 
 <script setup>
-import { defineComponent } from 'vue'
-import { useQuasar } from 'quasar'
+import { defineComponent } from "vue";
+import { useQuasar } from "quasar";
 
-import SuperTokens from 'supertokens-web-js';
-import Session from 'supertokens-web-js/recipe/session';
-import Passwordless from 'supertokens-web-js/recipe/passwordless'
+import SuperTokens from "supertokens-web-js";
+import Session from "supertokens-web-js/recipe/session";
+import Passwordless from "supertokens-web-js/recipe/passwordless";
 
 let apiHost;
 if (process.env.DEV) {
-  apiHost = 'http://localhost'
+  apiHost = "http://localhost";
 }
 if (process.env.PROD) {
-  apiHost = 'https://api.service.ultri.com'
+  apiHost = "https://api.service.ultri.com";
 }
+console.log("APIHOST", apiHost);
 SuperTokens.init({
-    appInfo: {
-        apiDomain: apiHost,
-        apiBasePath: "/auth",
-        appName: "Ultri",
-    },
-    recipeList: [
-        Session.init(),
-        Passwordless.init(),
-    ],
+  enableDebugLogs: true,
+  appInfo: {
+    apiDomain: apiHost,
+    apiBasePath: "/auth",
+    appName: "Ultri",
+  },
+  recipeList: [
+    Session.init({ getTokenTransferMethod: () => "cookie" }),
+    Passwordless.init(),
+  ],
 });
 
-const $q = useQuasar()
+const $q = useQuasar();
 
-console.log($q.dark.isActive)
-
+console.log($q.dark.isActive);
 </script>

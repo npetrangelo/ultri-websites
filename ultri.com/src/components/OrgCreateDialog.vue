@@ -3,21 +3,27 @@
     <q-card class="q-dialog-plugin">
       <q-form @submit="onSubmit" @reset="onReset">
         <q-bar class="dialog-qbar">
-          {{  $t('orgs.create-dialog.dialog-title') }}
+          {{ $t("orgs.create-dialog.dialog-title") }}
           <q-space></q-space>
 
-          <q-btn dense flat icon="mdi-close" v-close-popup @click="auth.setTargetUrl(null)">
-            <q-tooltip>{{$t('nav.close')}} </q-tooltip>
+          <q-btn
+            dense
+            flat
+            icon="mdi-close"
+            v-close-popup
+            @click="submitted = false"
+          >
+            <q-tooltip>{{ $t("nav.close") }} </q-tooltip>
           </q-btn>
         </q-bar>
         <q-card-section>
           <div class="dialog-header row">
             <div class="col">
-              {{ $t('orgs.create-dialog.create-form-title') }}
+              {{ $t("orgs.create-dialog.create-form-title") }}
             </div>
           </div>
           <div class="dialog-body">
-            {{ $t('orgs.create-dialog.create-form-body') }}
+            {{ $t("orgs.create-dialog.create-form-body") }}
           </div>
         </q-card-section>
         <q-card-section>
@@ -42,11 +48,11 @@
 </template>
 
 <script setup>
-import { ref, computed, watch } from 'vue';
-import { useDialogPluginComponent } from 'quasar';
-import { useRouter } from 'vue-router';
+import { ref, computed, watch } from "vue";
+import { useDialogPluginComponent } from "quasar";
+import { useRouter } from "vue-router";
 
-import { useOrgStore } from '../stores/org';
+import { useOrgStore } from "../stores/org";
 
 import { useI18n } from "vue-i18n";
 
@@ -62,9 +68,8 @@ const orgName = ref(null);
 const validOrgName = ref(false);
 const submitted = ref(false);
 const submitEnabled = computed(() => {
-  return orgName.value && ! submitted.value && validOrgName.value ? true : false;
+  return orgName.value && !submitted.value && validOrgName.value ? true : false;
 });
-
 
 const reset = () => {
   orgName.value = null;
@@ -76,7 +81,7 @@ defineEmits([
   // REQUIRED; need to specify some events that your
   // component will emit through useDialogPluginComponent()
   //...useDialogPluginComponent.emits,
-  'ok',
+  "ok",
 ]);
 
 const { dialogRef, onDialogOK } = useDialogPluginComponent();
@@ -100,10 +105,8 @@ const onSubmit = async () => {
   submitted.value = true;
   const orgData = await org.createOrg(orgName.value);
 
-  console.log(orgData.uid)
-  router.push('/org/'+ orgData.uid)
-
-
+  console.log(orgData.uid);
+  router.push("/org/" + orgData.uid);
 };
 
 const onReset = () => {
@@ -117,7 +120,6 @@ watch(orgName, (newValue, oldValue) => {
     validOrgName.value = false;
   }
 });
-
 </script>
 
 <style scoped lang="scss"></style>
