@@ -50,10 +50,7 @@
   border-style: solid;
   background-color: grey;
 }
-.key-partners {
-  color: white;
-  background-color: green;
-}
+
 .key-resources {
   color: black;
   background-color: yellow;
