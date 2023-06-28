@@ -52,6 +52,22 @@ const routes = [
   },
 
   {
+    path: "/canvas",
+    component: () => import("layouts/MainLayout.vue"),
+    meta: {
+      drawer: "Canvas"
+    },
+    children: [
+      {
+        name: "canvas",
+        path: "",
+        component: () => import("pages/CanvasPage.vue")
+      }
+    ]
+  },
+
+
+  {
     path: "/forms/:formName",
     component: () => import("layouts/MainLayout.vue"),
     children: [
