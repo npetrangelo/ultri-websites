@@ -71,6 +71,7 @@
     <q-drawer v-model="leftDrawerOpen" show-if-above bordered>
       <HomepageDrawer v-if="route.meta.drawer == 'Homepage'"></HomepageDrawer>
       <LogbookDrawer v-if="route.meta.drawer == 'Logbook'"></LogbookDrawer>
+      <CanvasDrawer v-if="route.meta.drawer == 'Canvas'"></CanvasDrawer>
     </q-drawer>
 
     <q-footer >
@@ -109,6 +110,7 @@ import SignInButton from "../components/SignInButton.vue";
 
 import LogbookDrawer from "./drawers/LogbookDrawer.vue";
 import HomepageDrawer from "./drawers/HomepageDrawer.vue";
+import CanvasDrawer from "./drawers/CanvasDrawer.vue";
 
 import PasswordlessAuthDialog from "../components/PasswordlessDialog.vue";
 import WelcomeDialog from "../components/WelcomeDialog.vue";
