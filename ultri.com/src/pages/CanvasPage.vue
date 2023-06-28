@@ -133,10 +133,10 @@
             </div>
             <div class="col fit">
               <div class="row fit">
-                <div class="row full-width key-activities q-ma-sm">
+                <div class="row full-width key-activities q-pa-sm">
                   <div class="infobox fit q-pa-sm">Key Activities</div>
                 </div>
-                <div class="row full-width key-resources q-ma-sm">
+                <div class="row full-width key-resources q-pa-sm">
                   <div class="infobox fit q-pa-sm">Key Resources</div>
                 </div>
               </div>
@@ -148,12 +148,14 @@
 
             <div class="col fit">
               <div class="row fit">
+
                 <div
                   class="row customer-relationships full-width key-activities q-pa-sm"
                 >
                   <div class="infobox fit q-pa-sm">Customer Relationships</div>
                 </div>
-                <div class="row channels full-width key-resources q-ma-sm">
+
+                <div class="row channels full-width key-resources q-pa-sm">
                   <div class="infobox fit q-pa-sm">Channels</div>
                 </div>
               </div>
