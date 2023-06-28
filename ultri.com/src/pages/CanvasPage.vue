@@ -119,7 +119,9 @@
       <div class="row full-width">
         <div class="row full-width key-activities" style="height: 80%">
           <div class="row full-width">
-            <div class="col key-partners">LARGE Key Partners</div>
+            <div class="col key-partners q-ma-sm">
+              <div class="infobox fit q-pa-sm"> LARGE Key Partners
+                </div></div>
             <div class="col fit">
               <div class="row fit">
                 <div class="row full-width key-activities">Key Activities</div>
@@ -161,6 +163,11 @@ import BusinessCanvas from "../components/canvas/BusinessCanvas.vue";
 </script>
 
 <style lang="scss">
+.infobox {
+  border: solid;
+  border-color: red;
+  border-radius: 1em;
+}
 .outer-container {
   border-style: double;
 }
@@ -173,7 +180,7 @@ import BusinessCanvas from "../components/canvas/BusinessCanvas.vue";
 }
 .canvas-container {
   border-style: solid;
-  background-color: grey;
+  background-color: white;
 }
 .key-partners {
   color: white;
