@@ -47,19 +47,25 @@
 
       <div class="row full-width" style="height: 11%">
         <div class="row full-width">
-          <div class="col customer-segments q-ma-xs"><div class="infobox fit q-pa-xs">Customer Segments</div></div>
+          <div class="col customer-segments q-ma-xs">
+            <div class="infobox fit q-pa-xs">Customer Segments</div>
+          </div>
         </div>
       </div>
 
       <div class="row full-width" style="height: 11%">
         <div class="row full-width">
-          <div class="col cost-structure q-ma-xs"><div class="infobox fit q-pa-xs">Cost Structure</div></div>
+          <div class="col cost-structure q-ma-xs">
+            <div class="infobox fit q-pa-xs">Cost Structure</div>
+          </div>
         </div>
       </div>
 
       <div class="row full-width" style="height: 12%">
         <div class="row full-width">
-          <div class="col revenue-stream q-ma-xs"><div class="infobox fit q-pa-xs">Revenue Stream</div></div>
+          <div class="col revenue-stream q-ma-xs">
+            <div class="infobox fit q-pa-xs">Revenue Stream</div>
+          </div>
         </div>
       </div>
     </div>
@@ -129,7 +135,22 @@
         <div class="row full-width key-activities" style="height: 80%">
           <div class="row full-width">
             <div class="col key-partners q-ma-sm">
-              <div class="infobox fit q-pa-sm">LARGE Key Partners</div>
+              <div class="infobox fit">
+                <div class="col">
+                  <div class="row box-head justify-center q-pa-xs text-bold text-h6">
+                    <q-space />Key Partners<q-space /><q-icon name="mdi-plus-circle-outline" size="sm" class="q-mr-md" @click="showEntryDialog('partners')"></q-icon>
+                  </div>
+                  <div class="row box-body q-pa-sm">
+                    <ol type="A">
+                      <li v-for="partner in partners"  :key="partner.uid">
+                        {{ partner.txt }}
+                      </li>
+
+                    </ol>
+
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="col fit">
               <div class="row fit">
@@ -148,7 +169,6 @@
 
             <div class="col fit">
               <div class="row fit">
-
                 <div
                   class="row customer-relationships full-width key-activities q-pa-sm"
                 >
@@ -178,14 +198,60 @@
         </div>
       </div>
     </div>
+    <q-dialog v-model="newEntryDialog" persistent>
+      <q-card style="min-width: 350px">
+        <q-card-section class="text-h6">Add {{newEntryType}} value</q-card-section>
+
+        <q-card-section class="q-pt-none">
+          <q-input dense v-model="newEntryTxt" autofocus @keyup.enter="prompt = false"></q-input>
+        </q-card-section>
+
+        <q-card-actions align="right" class="text-primary">
+          <q-btn flat label="Cancel" v-close-popup></q-btn>
+          <q-btn flat label="Add" @click="addEntry" v-close-popup></q-btn>
+        </q-card-actions>
+      </q-card>
+    </q-dialog>
   </q-page>
 </template>
 
 <script setup>
+import { ref } from "vue";
+import { nanoid } from 'nanoid'
 
+const partners = ref([{ txt: "start.coop", uid: "xcx"}]);
+const activities = ref([]);
+const resources = ref([]);
+const valueProps = ref([]);
+const custRelations = ref([]);
+const channels = ref([]);
+const custSegments = ref([]);
+const costs = ref([]);
+const revenue = ref([]);
+
+const newEntryDialog = ref(false);
+const newEntryType = ref(false);
+const newEntryTxt = ref(null);
+
+const showEntryDialog = (box) => {
+  console.log(box)
+  newEntryType.value = box
+  newEntryDialog.value = true;
+}
+
+const addEntry = () => {
+  partners.value.push({ uid: nanoid(), txt: newEntryTxt.value })
+}
 </script>
 
 <style lang="scss">
+.box-head {
+  background-color: $primary;
+  border-color: $primary;
+  border-top-left-radius: 0.5em;
+  border-top-right-radius: 0.5em;
+  color: white;
+}
 .infobox {
   border: solid;
   border-color: lightgrey;
@@ -204,5 +270,4 @@
   border-style: solid;
   background-color: white;
 }
-
 </style>
