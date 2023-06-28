@@ -73,6 +73,7 @@
       <LogbookDrawer v-if="route.meta.drawer == 'Logbook'"></LogbookDrawer>
       <CanvasDrawer v-if="route.meta.drawer == 'Canvas'"></CanvasDrawer>
       <DashboardDrawer v-if="route.meta.drawer == 'Dashboard'"></DashboardDrawer>
+      <OrgDrawer v-if="route.meta.drawer == 'Org'"></OrgDrawer>
     </q-drawer>
 
     <q-footer >
@@ -125,6 +126,7 @@ import LogbookDrawer from "./drawers/LogbookDrawer.vue";
 import HomepageDrawer from "./drawers/HomepageDrawer.vue";
 import CanvasDrawer from "./drawers/CanvasDrawer.vue";
 import DashboardDrawer from "./drawers/DashboardDrawer.vue";
+import OrgDrawer from "./drawers/OrgDrawer.vue";
 
 import PasswordlessAuthDialog from "../components/PasswordlessDialog.vue";
 import WelcomeDialog from "../components/WelcomeDialog.vue";

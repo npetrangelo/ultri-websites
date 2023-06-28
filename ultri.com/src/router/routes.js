@@ -81,6 +81,21 @@ const routes = [
     ]
   },
 
+  {
+    path: "/org",
+    component: () => import("layouts/MainLayout.vue"),
+    meta: {
+      drawer: "Org"
+    },
+    children: [
+      {
+        name: "org",
+        path: "",
+        component: () => import("pages/OrgPage.vue")
+      }
+    ]
+  },
+
 
   {
     path: "/forms/:formName",
