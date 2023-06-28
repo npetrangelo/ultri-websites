@@ -1,5 +1,5 @@
 export default {
-  'homepage.heading1': 'Business software',
+  'homepage.heading1': 'Software',
   'homepage.heading2': 'cooperatively',
   'homepage.heading3': 'owned by the users',
   'homepage.heading4': 'and developers',

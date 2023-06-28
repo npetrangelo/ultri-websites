@@ -47,6 +47,15 @@
         </q-item-section>
       </q-item>
       -->
+      <q-item clickable v-close-popup v-if="auth.isSignedIn" to="/dashboard">
+        <q-item-section avatar>
+          <q-icon name="mdi-view-dashboard" color="primary" />
+        </q-item-section>
+        <q-item-section>
+          <q-item-label>{{ $t("nav.dashboard") }}</q-item-label>
+        </q-item-section>
+      </q-item>
+
       <q-item clickable v-close-popup v-if="auth.isSignedIn" to="/orgs">
         <q-item-section avatar>
           <q-icon name="mdi-office-building" color="primary" />

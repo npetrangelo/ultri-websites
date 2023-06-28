@@ -66,6 +66,21 @@ const routes = [
     ]
   },
 
+  {
+    path: "/dashboard",
+    component: () => import("layouts/MainLayout.vue"),
+    meta: {
+      drawer: "Dashboard"
+    },
+    children: [
+      {
+        name: "dashboard",
+        path: "",
+        component: () => import("pages/DashboardPage.vue")
+      }
+    ]
+  },
+
 
   {
     path: "/forms/:formName",
