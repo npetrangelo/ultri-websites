@@ -8,6 +8,9 @@
       <q-card-section
         ><ul>
           <li>Create Timeline Post</li>
+          <li>List Personal Circles</li>
+          <li>Create Personal Circles</li>
+          <li>View Calendar</li>
           <li>Request platform support</li>
         </ul>
         </q-card-section
@@ -25,6 +28,7 @@
           <li>Create Decision</li>
           <li>Create Agreement</li>
           <li>Create Peer Review</li>
+          <li>View Org Calendar</li>
           <li>Request platform support</li>
         </ul>
         </ul></q-card-section
@@ -36,6 +40,7 @@
         <ul>
           <li>Create Proposal</li>
           <li>Access Co-op Logbook</li>
+          <li>View Co-op Calendar</li>
           <li>Co-op membership support</li>
         </ul></q-card-section
       ></q-card
@@ -45,6 +50,7 @@
       <q-card-section>
         <ul>
           <li>View Earnings History</li>
+          <li>View Developer Calendar</li>
           <li>Access Co-op Logbook</li>
         </ul></q-card-section
       ></q-card
