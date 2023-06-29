@@ -4,7 +4,7 @@ layout: home
 
 hero:
   name: "Ultri Co-op"
-  text: "Own Your It!"
+  text: "Own Your Internet!"
   tagline: Leave corporate owned services behind 
   actions:
     - theme: brand
