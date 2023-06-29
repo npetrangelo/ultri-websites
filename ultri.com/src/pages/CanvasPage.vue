@@ -142,7 +142,7 @@
                   </div>
                   <div class="row box-body q-pa-sm">
                     <ol type="A">
-                      <li v-for="partner in partners"  :key="partner.uid">
+                      <li v-for="partner in partners"  :key="partner.uid" @click="showEditDialog('partner', partner.uid)">
                         {{ partner.txt }}
                       </li>
 
@@ -203,12 +203,28 @@
         <q-card-section class="text-h6">Add {{newEntryType}} value</q-card-section>
 
         <q-card-section class="q-pt-none">
-          <q-input dense v-model="newEntryTxt" autofocus @keyup.enter="prompt = false"></q-input>
+          <q-input type="textarea" dense v-model="newEntryTxt" autofocus @keyup.enter="prompt = false"></q-input>
         </q-card-section>
 
         <q-card-actions align="right" class="text-primary">
           <q-btn flat label="Cancel" v-close-popup></q-btn>
           <q-btn flat label="Add" @click="addEntry" v-close-popup></q-btn>
+        </q-card-actions>
+      </q-card>
+    </q-dialog>
+    <q-dialog v-model="editEntryDialog" persistent>
+      <q-card style="min-width: 350px">
+        <q-card-section class="text-h6">Edit {{editEntryType}} value</q-card-section>
+
+        <q-card-section class="q-pt-none">
+          <q-input type="textarea" dense v-model="editEntryTxt" autofocus @keyup.enter="prompt = false"></q-input>
+        </q-card-section>
+
+        <q-card-actions align="right" class="text-primary">
+          <q-btn flat label="Delete"  @click="deleteEntry" v-close-popup></q-btn>
+          <q-space />
+          <q-btn flat label="Cancel" v-close-popup></q-btn>
+          <q-btn flat label="Update" @click="updateEntry" v-close-popup></q-btn>
         </q-card-actions>
       </q-card>
     </q-dialog>
@@ -219,7 +235,7 @@
 import { ref } from "vue";
 import { nanoid } from 'nanoid'
 
-const partners = ref([{ txt: "start.coop", uid: "xcx"}]);
+const partners = ref([]);
 const activities = ref([]);
 const resources = ref([]);
 const valueProps = ref([]);
@@ -233,14 +249,59 @@ const newEntryDialog = ref(false);
 const newEntryType = ref(false);
 const newEntryTxt = ref(null);
 
+const editEntryDialog = ref(false);
+const editEntryType = ref(false);
+const editEntryTxt = ref(null);
+const editEntryUid = ref(null);
+
 const showEntryDialog = (box) => {
   console.log(box)
-  newEntryType.value = box
+  newEntryType.value = box;
   newEntryDialog.value = true;
+}
+
+const showEditDialog = (boxType, uid) => {
+
+  const editObj = partners.value.filter((obj) => obj.uid == uid);
+  console.log(editObj[0].txt)
+  editEntryTxt.value = editObj[0].txt;
+  editEntryType.value = boxType;
+  editEntryUid.value = editObj[0].uid;
+  editEntryDialog.value = true;
 }
 
 const addEntry = () => {
   partners.value.push({ uid: nanoid(), txt: newEntryTxt.value })
+  newEntryTxt.value = null;
+}
+
+const updateEntry = () => {
+  // We really replace the object
+  partners.value = partners.value.filter((obj) => obj.uid !== editEntryUid.value);
+  partners.value.push({ uid: nanoid(), txt: editEntryTxt.value })
+  editEntryTxt.value = null;
+  editEntryType.value = null;
+  editEntryUid.value = null;
+  editEntryDialog.value = false;
+}
+
+const deleteEntry = () => {
+  // We really replace the object
+  partners.value = partners.value.filter((obj) => obj.uid !== editEntryUid.value);
+  editEntryTxt.value = null;
+  editEntryType.value = null;
+  editEntryUid.value = null;
+  editEntryDialog.value = false;
+}
+
+const edit = (boxType, uid) => {
+
+  console.log(boxType, uid);
+  editEntryType.value = boxType;
+  editEntryUid.value = uid;
+  editEntryDialog.value = true;
+  editEntryTxt.value = activities.value;
+
 }
 </script>
 
