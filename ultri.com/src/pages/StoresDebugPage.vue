@@ -1,5 +1,8 @@
 <template>
   <div>
+    <div class="row">
+      <q-btn label="Clear Stores" @click="clearStores"></q-btn>
+    </div>
     Auth:
     <vue-json-pretty :data="auth.$state" />
     Theme:
@@ -10,20 +13,32 @@
     <vue-json-pretty :data="[...org.$state.orgs.entries()]" />
     Nuggets:
     <vue-json-pretty :data="nugget.$state" />
+    Colors:
+    <vue-json-pretty :data="color.$state" />
   </div>
 </template>
 
 <script setup>
+import VueJsonPretty from "vue-json-pretty";
+import "vue-json-pretty/lib/styles.css";
 
-import VueJsonPretty from 'vue-json-pretty';
-import 'vue-json-pretty/lib/styles.css';
-
-import { useAuthStore } from '../stores/auth';
-import { useThemeStore } from '../stores/theme';
-import { useOrgStore } from '../stores/org';
-import { useNuggetStore } from '../stores/nugget';
+import { useAuthStore } from "../stores/auth";
+import { useThemeStore } from "../stores/theme";
+import { useOrgStore } from "../stores/org";
+import { useNuggetStore } from "../stores/nugget";
+import { useColorStore } from "../stores/color";
 const auth = useAuthStore();
 const theme = useThemeStore();
 const org = useOrgStore();
 const nugget = useNuggetStore();
+const color = useColorStore();
+
+const clearStores = () => {
+  console.log("Clearing stores")
+  auth.reset();
+  theme.reset();
+  org.reset();
+  nugget.reset();
+  color.reset();
+};
 </script>

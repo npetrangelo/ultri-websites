@@ -17,6 +17,14 @@ export const useColorStore = defineStore('color', {
   },
 
   actions: {
+    reset() {
+      this.darkMode = false;
+      this.primaryColor = null;
+      this.secondaryColor = null;
+      this.accentColor = null;
+      this.ctaColor = null;
+      this.glossy = false;
+    },
     setDarkMode(val) {
       this.darkMode = val;
     },

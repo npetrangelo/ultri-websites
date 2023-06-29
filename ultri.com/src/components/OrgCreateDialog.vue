@@ -11,7 +11,7 @@
             flat
             icon="mdi-close"
             v-close-popup
-            @click="submitted = false"
+            @click="reset"
           >
             <q-tooltip>{{ $t("nav.close") }} </q-tooltip>
           </q-btn>
@@ -73,7 +73,6 @@ const submitEnabled = computed(() => {
 
 const reset = () => {
   orgName.value = null;
-  validEmail.value = false;
   submitted.value = false;
 };
 
@@ -105,8 +104,8 @@ const onSubmit = async () => {
   submitted.value = true;
   const orgData = await org.createOrg(orgName.value);
 
-  console.log(orgData.uid);
-  router.push("/org/" + orgData.uid);
+  reset();
+  router.push("/org/" + orgData.orgUid);
 };
 
 const onReset = () => {

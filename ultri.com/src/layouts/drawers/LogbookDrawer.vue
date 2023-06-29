@@ -7,7 +7,7 @@
           expand-separator
           icon="mdi-office-building"
           :label="
-            org.currentOrgUid
+            org.currentOrgUid && org.orgs.get(org.currentOrgUid)
               ? org.orgs.get(org.currentOrgUid).name
               : $t('orgs.drawer.select-organization')
           "
@@ -46,6 +46,7 @@
             :caption="item.uid"
             :to="'/org/' + item.uid"
           >
+          {{item}}
             <!-- ORGANIZATION QUICKVIEW -->
             <q-card>
               <q-card-actions>
@@ -54,7 +55,7 @@
                   flat
                   icon="mdi-delete"
                   size="sm"
-                  @click="org.delete(item.uid)"
+                  @click="deleteOrg(item.uid)"
                   >{{ $t("nav.delete") }}</q-btn
                 >
               </q-card-actions>
@@ -322,16 +323,25 @@
 
 <script setup>
 import { ref, watch, computed } from "vue";
-import { useRoute } from "vue-router";
+import { useRoute, useRouter } from "vue-router";
 import { useQuasar } from "quasar";
 import { useAuthStore } from "../../stores/auth";
 import { useOrgStore } from "../../stores/org";
 import { useColorStore } from "../../stores/color";
 
 const route = useRoute();
+const router = useRouter();
 const auth = useAuthStore();
 const color = useColorStore();
 const org = useOrgStore();
+
+const deleteOrg = (uid) => {
+
+  this.org.delete(uid);
+  if(uid == this.org.currentOrgUid) {
+    router.push('/orgs')
+  }
+}
 
 </script>
 

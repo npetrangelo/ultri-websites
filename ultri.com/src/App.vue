@@ -12,14 +12,14 @@ import Passwordless from "supertokens-web-js/recipe/passwordless";
 
 let apiHost;
 if (process.env.DEV) {
-  apiHost = "http://localhost";
+  apiHost = "https://localhost";
 }
 if (process.env.PROD) {
   apiHost = "https://api.service.ultri.com";
 }
 console.log("APIHOST", apiHost);
 SuperTokens.init({
-  enableDebugLogs: true,
+  // enableDebugLogs: true,
   appInfo: {
     apiDomain: apiHost,
     apiBasePath: "/auth",

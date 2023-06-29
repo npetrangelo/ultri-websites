@@ -57,10 +57,14 @@ export const useOrgStore = defineStore("org", {
     },
     async createOrg(name) {
       // POST an org
-      let orgData = {};
-      orgData = await api.post("/orgs", { name: name });
 
-      this.orgs.set(orgUid, orgData);
+      const result = await api.post("/orgs", { name: name });
+
+      const orgData = result.data;
+
+      console.log(orgData)
+
+      this.orgs.set(orgData.uid, orgData);
 
       this.showOrgCreateDialog = null;
 
@@ -82,6 +86,9 @@ export const useOrgStore = defineStore("org", {
       this.showOrgCreateLogbookEntryDialog = true;
     },
     validateOrgName(orgName) {
+      if(orgName === null) {
+        return false;
+      }
       return orgName.length >= 2 && orgName.length <= 64;
     },
     validateTitle(title) {
