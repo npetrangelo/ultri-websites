@@ -60,6 +60,7 @@ export default defineConfig({
       {
         text: 'Co-op Projects',
         items: [
+          { text: 'OpenSociocracy', link: '/opensociocracy/' },
           { text: 'Sociocracy Handbook', link: 'https://handbook.opensociocracy.org/' },
           { text: 'Sociocracy Logbook', link: 'https://logbook.opensociocracy.org/' },
           { text: 'Circle Builder', link: 'https://github.com/OpenSociocracy/circle-builder' },
