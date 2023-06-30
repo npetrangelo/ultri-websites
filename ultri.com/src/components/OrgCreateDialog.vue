@@ -105,7 +105,7 @@ const onSubmit = async () => {
   const orgData = await org.createOrg(orgName.value);
 
   reset();
-  router.push("/org/" + orgData.orgUid);
+  router.push("/org/" + orgData.uid);
 };
 
 const onReset = () => {

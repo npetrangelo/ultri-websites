@@ -68,7 +68,7 @@ export const useOrgStore = defineStore("org", {
 
       this.showOrgCreateDialog = null;
 
-      return orgData ? orgData : {};
+      return orgData;
     },
     async delete(uid) {
       if (uid == this.currentOrgUid) {

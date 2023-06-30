@@ -337,8 +337,8 @@ const org = useOrgStore();
 
 const deleteOrg = (uid) => {
 
-  this.org.delete(uid);
-  if(uid == this.org.currentOrgUid) {
+  org.delete(uid);
+  if(uid == org.currentOrgUid) {
     router.push('/orgs')
   }
 }
