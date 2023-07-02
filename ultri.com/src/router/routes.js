@@ -26,6 +26,21 @@ const routes = [
   },
 
   {
+    path: "/calendar",
+    component: () => import("layouts/MainLayout.vue"),
+    meta: {
+      drawer: "Homepage"
+    },
+    children: [
+      {
+        name: "calendar",
+        path: "",
+        component: () => import("pages/CalendarPage.vue")
+      }
+    ]
+  },
+
+  {
     path: "/orgs",
     component: () => import("layouts/MainLayout.vue"),
     meta: {

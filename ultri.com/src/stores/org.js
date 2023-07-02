@@ -71,6 +71,9 @@ export const useOrgStore = defineStore("org", {
       return orgData;
     },
     async delete(uid) {
+
+      const result = await api.delete("/orgs/" + uid);
+
       if (uid == this.currentOrgUid) {
         this.currentOrgUid = null;
       }
