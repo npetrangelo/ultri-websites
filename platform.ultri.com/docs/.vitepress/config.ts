@@ -36,7 +36,7 @@ export default defineConfig({
       {
         text: 'Data',
         items: [
-          { text: 'Index', link '/' },
+          { text: 'Index', link '/ultri-open-platform/' },
           { text: 'API Model', link: '/nugget-api/' },
           { text: 'Database Model', link: '/nugget-schema/' }
         ]
