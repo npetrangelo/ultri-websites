@@ -132,7 +132,14 @@ function getCurrentDay(day) {
 
 import eventData from "../data/calendar.json";
 console.log(eventData);
-const events = ref(eventData.events);
+const localEvents = eventData.events;
+console.log(localEvents)
+
+
+
+const events = ref(localEvents);
+
+console.log(events.value)
 
 export default defineComponent({
   name: "CalendarPage",
@@ -282,7 +289,7 @@ export default defineComponent({
       if (events.value.length > 0) {
         events.value.forEach((event) => {
           (map[event.date] = map[event.date] || []).push(event);
-          console.log(event);
+          //console.log(event);
           if (event.days !== undefined) {
             let timestamp = parseTimestamp(event.date);
             let days = event.days;
@@ -299,7 +306,7 @@ export default defineComponent({
           }
         });
       }
-      console.log(map);
+      //console.log(map);
       return map;
     },
   },
@@ -310,16 +317,16 @@ export default defineComponent({
       const lastDay = parsed(week[week.length - 1].date + " 23:59");
       const eventsWeek = [];
       this.events.forEach((event, id) => {
-        console.log(event.end);
+        //console.log(event.end);
         //const startDate = parsed(event.start + ' 00:00')
         //const endDate = parsed(event.end + ' 23:59')
         const startDate = parsed(event.start);
         const endDate = parsed(event.end);
 
-        console.log("START")
-        console.log(startDate)
-        console.log("END")
-        console.log(endDate)
+        //console.log("START")
+        //console.log(startDate)
+        //console.log("END")
+        //console.log(endDate)
 
         if (isOverlappingDates(startDate, endDate, firstDay, lastDay)) {
           const left = daysBetween(firstDay, startDate, true);
@@ -407,8 +414,8 @@ export default defineComponent({
       );
     },
     onClick(event) {
-      console.log("clicked");
-      console.log(event);
+      //console.log("clicked");
+      //console.log(event);
 
       this.$q
         .dialog({

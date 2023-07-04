@@ -15,10 +15,11 @@
         <hr />
         <div class="q-px-md col" v-if="event.allDay == 'FALSE'">
           <span class="text-weight-medium">Start:</span>
-          {{ dateTimeStr(event.start) }} CDST
+          {{ dateTimeStr(event.start) }}
+        </div>
         <div class="q-px-md col" v-if="event.allDay == 'FALSE'">
           <span class="text-weight-medium">End:</span>
-          {{ dateTimeStr(event.end) }} CDST
+          {{ dateTimeStr(event.end) }}
         </div>
         <div class="q-px-md col" v-if="event.allDay == 'TRUE'">
           <span class="text-weight-medium">All Day:</span>
@@ -35,31 +36,31 @@
       <q-card-actions class="text-center justify-center">
         <q-btn-dropdown color="primary" label="Add to Calendar" icon="mdi-calendar">
           <q-list>
-            <q-item clickable v-close-popup :href="getEmailLink('google')"  target="_blank">
+            <q-item clickable v-close-popup :href="getCalendarLink('google')"  target="_blank">
               <q-item-section>
                 <q-item-label>Google</q-item-label>
               </q-item-section>
             </q-item>
 
-            <q-item clickable v-close-popup :href="getEmailLink('outlook')"  target="_blank">
+            <q-item clickable v-close-popup :href="getCalendarLink('outlook')"  target="_blank">
               <q-item-section>
                 <q-item-label>Outlook</q-item-label>
               </q-item-section>
             </q-item>
 
-            <q-item clickable v-close-popup :href="getEmailLink('office365')"  target="_blank">
+            <q-item clickable v-close-popup :href="getCalendarLink('office365')"  target="_blank">
               <q-item-section>
                 <q-item-label>Office 365</q-item-label>
               </q-item-section>
             </q-item>
 
-            <q-item clickable v-close-popup :href="getEmailLink('yahoo')"  target="_blank">
+            <q-item clickable v-close-popup :href="getCalendarLink('yahoo')"  target="_blank">
               <q-item-section>
                 <q-item-label>Yahoo</q-item-label>
               </q-item-section>
             </q-item>
 
-            <q-item clickable v-close-popup :href="getEmailLink('ics')" target="_blank">
+            <q-item clickable v-close-popup :href="getCalendarLink('ics')" target="_blank">
               <q-item-section>
                 <q-item-label>Download .ics file</q-item-label>
               </q-item-section>
@@ -72,9 +73,9 @@
 </template>
 
 <script>
-import { defineComponent } from "vue";
+import { defineComponent, unref } from "vue";
 
-import { useQuasar } from 'quasar'
+import { useQuasar, date } from 'quasar'
 
 import { parseTimestamp } from "@quasar/quasar-ui-qcalendar";
 import { google, outlook, office365, yahoo, ics } from "calendar-link";
@@ -84,7 +85,13 @@ export default defineComponent({
   components: {},
   props: ["event"],
   setup(props, { emit }) {
-    console.log(props);
+    console.log(props.event);
+
+    const localEvent = unref(props.event);
+
+    console.log(localEvent)
+
+
 
     const $q = useQuasar()
 
@@ -96,11 +103,15 @@ export default defineComponent({
         day: "numeric",
       };
 
-      const date = new Date(dateTime);
+      const calDate = new Date(dateTime);
+      console.log(calDate)
+
+      console.log(calDate.getTimezoneOffset())
+
+       calDate.setMinutes(calDate.getMinutes() - calDate.getTimezoneOffset());
+
       return (
-        date.toLocaleDateString("us-EN", options) +
-        " " +
-        date.toLocaleTimeString("us-EN", { timeStyle: "short" })
+        calDate.toLocaleString()
       );
     };
 
@@ -116,8 +127,10 @@ export default defineComponent({
       return date.toLocaleDateString("us-EN", options);
     };
 
-    const getEmailLink = (target) => {
+    const getCalendarLink = (target) => {
       const startDate = new Date(props.event.start);
+
+      startDate.setMinutes(startDate.getMinutes() - startDate.getTimezoneOffset());
 
       let event;
 
@@ -162,7 +175,7 @@ export default defineComponent({
     return {
       dateTimeStr,
       dateStr,
-      getEmailLink,
+      getCalendarLink,
     };
   },
 });
