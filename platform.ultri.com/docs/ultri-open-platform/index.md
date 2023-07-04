@@ -22,4 +22,4 @@ The API exposes the [Nugget Schema](/nugget-schema/).
 
 ### Swagger
 
-The [live swagger](https://api.service.ultri.com/documentation/) spec is available.
+The [live swagger](https://api.service.ultri.com/documentation) spec is available.
