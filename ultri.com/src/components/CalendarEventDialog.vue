@@ -2,7 +2,7 @@
   <q-dialog>
     <q-card>
       <q-bar>
-        <span v-if="$q.screen.lt.md">GCC</span><span v-else>Greenwood Cultural Center</span>
+        <span v-if="$q.screen.lt.md">GCC</span><span v-else>Ultri Co-op</span>
 
         <q-space></q-space>
 
