@@ -15,11 +15,10 @@
         <hr />
         <div class="q-px-md col" v-if="event.allDay == 'FALSE'">
           <span class="text-weight-medium">Start:</span>
-          {{ dateTimeStr(event.start) }}
-        </div>
+          {{ dateTimeStr(event.start) }} CDST
         <div class="q-px-md col" v-if="event.allDay == 'FALSE'">
           <span class="text-weight-medium">End:</span>
-          {{ dateTimeStr(event.end) }}
+          {{ dateTimeStr(event.end) }} CDST
         </div>
         <div class="q-px-md col" v-if="event.allDay == 'TRUE'">
           <span class="text-weight-medium">All Day:</span>
