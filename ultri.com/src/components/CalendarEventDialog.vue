@@ -10,28 +10,28 @@
       </q-bar>
       <q-card-section>
         <div class="text-body1 text-weight-medium q-px-md col eventPopup">
-          {{ event.title }}
+          {{ localEvent.title }}
         </div>
         <hr />
-        <div class="q-px-md col" v-if="event.allDay == 'FALSE'">
+        <div class="q-px-md col" v-if="localEvent.allDay == 'FALSE'">
           <span class="text-weight-medium">Start:</span>
-          {{ dateTimeStr(event.start) }}
+          {{ dateTimeStr(localEvent.start) }}
         </div>
-        <div class="q-px-md col" v-if="event.allDay == 'FALSE'">
+        <div class="q-px-md col" v-if="localEvent.allDay == 'FALSE'">
           <span class="text-weight-medium">End:</span>
-          {{ dateTimeStr(event.end) }}
+          {{ dateTimeStr(localEvent.end) }}
         </div>
-        <div class="q-px-md col" v-if="event.allDay == 'TRUE'">
+        <div class="q-px-md col" v-if="localEvent.allDay == 'TRUE'">
           <span class="text-weight-medium">All Day:</span>
-          {{ dateStr(event.date) }}
+          {{ dateStr(localEvent.date) }}
         </div>
         <hr />
         <div class="q-px-md col">
           <span class="text-weight-medium">Location:</span>
-          {{ event.location }}
+          {{ localEvent.location }}
         </div>
         <hr />
-        <div class="q-px-md col" v-html="event.details"></div>
+        <div class="q-px-md col" v-html="localEvent.details"></div>
       </q-card-section>
       <q-card-actions class="text-center justify-center">
         <q-btn-dropdown color="primary" label="Add to Calendar" icon="mdi-calendar">
@@ -128,24 +128,24 @@ export default defineComponent({
     };
 
     const getCalendarLink = (target) => {
-      const startDate = new Date(props.event.start);
+      const startDate = new Date(localEvent.start);
 
       startDate.setMinutes(startDate.getMinutes() - startDate.getTimezoneOffset());
 
       let event;
 
-      if (props.event.allDay == "TRUE") {
+      if (localEvent.allDay == "TRUE") {
         event = {
-          title: props.event.title,
-          description: props.event.details,
+          title: localEvent.title,
+          description: localEvent.details,
           allDay: true,
         };
       } else {
         event = {
-          title: props.event.title,
-          description: props.event.details,
+          title: localEvent.title,
+          description: localEvent.details,
           start: startDate,
-          duration: [props.event.duration, "minute"],
+          duration: [localEvent.duration, "minute"],
         };
       }
 
@@ -176,6 +176,7 @@ export default defineComponent({
       dateTimeStr,
       dateStr,
       getCalendarLink,
+      localEvent
     };
   },
 });
