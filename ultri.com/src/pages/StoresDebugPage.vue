@@ -5,8 +5,6 @@
     </div>
     Auth:
     <vue-json-pretty :data="auth.$state" />
-    Theme:
-    <vue-json-pretty :data="theme.$state" />
     Org:
     <vue-json-pretty :data="org.$state" />
     Orgs:
@@ -23,20 +21,17 @@ import VueJsonPretty from "vue-json-pretty";
 import "vue-json-pretty/lib/styles.css";
 
 import { useAuthStore } from "../stores/auth";
-import { useThemeStore } from "../stores/theme";
 import { useOrgStore } from "../stores/org";
 import { useNuggetStore } from "../stores/nugget";
 import { useColorStore } from "../stores/color";
 const auth = useAuthStore();
-const theme = useThemeStore();
 const org = useOrgStore();
 const nugget = useNuggetStore();
 const color = useColorStore();
 
 const clearStores = () => {
   console.log("Clearing stores")
-  auth.reset();
-  theme.reset();
+  auth.$reset();
   org.reset();
   nugget.reset();
   color.reset();

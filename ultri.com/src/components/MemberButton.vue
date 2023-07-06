@@ -38,7 +38,7 @@
       </q-item>
       -->
       <!--
-      <q-item clickable v-close-popup @click="theme.toggleDarkMode()">
+      <q-item clickable v-close-popup @click="color.toggleDarkMode()">
         <q-item-section avatar>
           <q-icon name="mdi-theme-light-dark" color="primary"/>
         </q-item-section>
@@ -98,7 +98,7 @@
 
 <script setup language="ts">
 import { useAuthStore } from "../stores/auth";
-import { useThemeStore } from "../stores/theme";
+import { useColorStore } from "../stores/color";
 
 import { useQuasar } from "quasar";
 import { useI18n } from "vue-i18n";
@@ -113,9 +113,9 @@ const $q = useQuasar();
 
 const auth = useAuthStore();
 
-const theme = useThemeStore();
-$q.dark.set(theme.darkMode);
-theme.$subscribe((mutation, state) => {
+const color = useColorStore();
+$q.dark.set(color.darkMode);
+color.$subscribe((mutation, state) => {
   $q.dark.set(state.darkMode);
 });
 
