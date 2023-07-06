@@ -15,6 +15,14 @@
 </template>
 
 <script setup>
+import { ref, watch, computed } from "vue";
+import { useOrgStore } from "../stores/org";
+
+const org = useOrgStore();
+org.loadOrgs();
+console.log(org.orgs)
+
+
 </script>
 
 <style lang="scss">

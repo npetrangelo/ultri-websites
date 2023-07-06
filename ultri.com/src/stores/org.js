@@ -1,12 +1,14 @@
-import { defineStore } from "pinia";
+import { defineStore, storeToRefs  } from "pinia";
 import { useStorage } from "@vueuse/core";
-import { ref } from "vue";
+import { ref, watch} from "vue";
 import { api } from "boot/axios";
+
 
 export const useOrgStore = defineStore("org", () => {
   const orgs = ref(useStorage("orgs", new Map()));
   const currentOrgUid = ref(useStorage("currentOrgUid", null));
   const fetching = ref(false);
+  const fetched = ref(false);
   const showOrgCreateDialog = ref(false);
 
   const setCurrentOrg = (uid) => {
@@ -25,6 +27,18 @@ export const useOrgStore = defineStore("org", () => {
     return title.length >= 2 && title.length <= 64;
   };
 
+  const loadOrgs = async () => {
+    // POST an org
+
+    const result = await api.get("/orgs");
+
+    const orgsData = result.data;
+
+    console.log(orgsData);
+
+    return orgsData;
+  };
+
   const createOrg = async (name) => {
     // POST an org
 
@@ -41,15 +55,28 @@ export const useOrgStore = defineStore("org", () => {
     return orgData;
   };
 
+  const $reset = () => {
+    console.log(
+    'RESET ORGS'
+    )
+    orgs.value = new Map();
+    currentOrgUid.value = null;
+    fetching.value = false;
+    showOrgCreateDialog.value = false;
+  }
+
   return {
     orgs,
     currentOrgUid,
     fetching,
+    fetched,
     showOrgCreateDialog,
+    loadOrgs,
     setCurrentOrg,
     triggerOrgCreateDialog,
     validateOrgName,
     validateTitle,
-    createOrg
+    createOrg,
+    $reset
   };
 });
