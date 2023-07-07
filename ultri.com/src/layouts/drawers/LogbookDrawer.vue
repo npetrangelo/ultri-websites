@@ -280,7 +280,7 @@
                   flat
                   icon="mdi-delete"
                   size="sm"
-                  @click="org.delete(item.uid)"
+                  @click="org.deleteMemberOrg(item.uid)"
                   >{{ $t("nav.delete") }}</q-btn
                 >
               </q-card-actions>
@@ -336,7 +336,9 @@ const color = useColorStore();
 const org = useOrgStore();
 
 const deleteOrg = (uid) => {
-  org.deleteOrg(uid);
+
+  org.deleteMemberOrg(uid);
+
   if(uid == org.currentOrgUid) {
     router.push('/orgs')
   }
