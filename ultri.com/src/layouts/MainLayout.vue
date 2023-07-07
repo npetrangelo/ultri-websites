@@ -19,7 +19,7 @@
         <q-toolbar-title>
           <span class="text-bold"
             ><router-link :to="{ name: 'home' }" class="navbar-brand-link">{{
-              org.currentOrgUid && auth.isSignedIn && org.orgs.get(org.currentOrgUid)
+              org.currentOrgUid && auth.isSignedIn && org.orgs.get(org.currentOrgUid) && route.meta.app && route.meta.app == 'Logbook'
                 ? org.orgs.get(org.currentOrgUid).name
                 : "Ultri"
             }}</router-link></span

@@ -22,7 +22,7 @@ export const useOrgStore = defineStore("org", () => {
       return false;
     }
     return orgName.length >= 2 && orgName.length <= 64;
-  };
+  }
   const validateTitle = (title) => {
     return title.length >= 2 && title.length <= 64;
   };
@@ -32,11 +32,11 @@ export const useOrgStore = defineStore("org", () => {
 
     const result = await api.get("/orgs");
 
-    const orgsData = result.data;
+    const dbOrgs = result.data.orgs;
+    dbOrgs.forEach(item => {
+      orgs.value.set(item.uid, item)
+    })
 
-    console.log(orgsData);
-
-    return orgsData;
   };
 
   const createOrg = async (name) => {
@@ -46,13 +46,19 @@ export const useOrgStore = defineStore("org", () => {
 
     const orgData = result.data;
 
-    console.log(orgData);
-
     orgs.value.set(orgData.uid, orgData);
 
     showOrgCreateDialog.value = null;
 
     return orgData;
+  };
+
+  const deleteOrg = async (uid) => {
+    // POST an org
+
+    const result = await api.delete("/orgs/" + uid);
+
+    orgs.value.delete(uid);
   };
 
   const $reset = () => {
@@ -77,6 +83,7 @@ export const useOrgStore = defineStore("org", () => {
     validateOrgName,
     validateTitle,
     createOrg,
+    deleteOrg,
     $reset
   };
 });

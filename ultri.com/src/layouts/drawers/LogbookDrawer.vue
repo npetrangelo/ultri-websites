@@ -336,8 +336,7 @@ const color = useColorStore();
 const org = useOrgStore();
 
 const deleteOrg = (uid) => {
-
-  org.delete(uid);
+  org.deleteOrg(uid);
   if(uid == org.currentOrgUid) {
     router.push('/orgs')
   }

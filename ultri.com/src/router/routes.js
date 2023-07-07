@@ -3,7 +3,8 @@ const routes = [
     path: "/",
     component: () => import("layouts/MainLayout.vue"),
     meta: {
-      drawer: "Homepage"
+      drawer: "Homepage",
+      app: "Coop"
     },
     children: [
       { name: "home", path: "", component: () => import("pages/IndexPage.vue") }
@@ -14,7 +15,8 @@ const routes = [
     path: "/pricing",
     component: () => import("layouts/MainLayout.vue"),
     meta: {
-      drawer: "Homepage"
+      drawer: "Homepage",
+      app: "Coop"
     },
     children: [
       {
@@ -29,7 +31,8 @@ const routes = [
     path: "/calendar",
     component: () => import("layouts/MainLayout.vue"),
     meta: {
-      drawer: "Homepage"
+      drawer: "Homepage",
+      app: "Coop"
     },
     children: [
       {
@@ -44,7 +47,8 @@ const routes = [
     path: "/orgs",
     component: () => import("layouts/MainLayout.vue"),
     meta: {
-      drawer: "Logbook"
+      drawer: "Logbook",
+      app: "Logbook"
     },
     children: [
       { name: "orgs", path: "", component: () => import("pages/OrgsPage.vue") }
@@ -55,7 +59,8 @@ const routes = [
     path: "/logbook",
     component: () => import("layouts/MainLayout.vue"),
     meta: {
-      drawer: "Logbook"
+      drawer: "Logbook",
+      app: "Logbook"
     },
     children: [
       {
@@ -70,7 +75,8 @@ const routes = [
     path: "/canvas",
     component: () => import("layouts/MainLayout.vue"),
     meta: {
-      drawer: "Canvas"
+      drawer: "Canvas",
+      app: "Logbook"
     },
     children: [
       {
@@ -85,7 +91,8 @@ const routes = [
     path: "/dashboard",
     component: () => import("layouts/MainLayout.vue"),
     meta: {
-      drawer: "Dashboard"
+      drawer: "Dashboard",
+      app: "Dashboard"
     },
     children: [
       {
@@ -100,7 +107,8 @@ const routes = [
     path: "/org",
     component: () => import("layouts/MainLayout.vue"),
     meta: {
-      drawer: "Org"
+      drawer: "Logbook",
+      app: "Logbook"
     },
     children: [
       {
