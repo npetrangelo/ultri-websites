@@ -53,7 +53,7 @@ export const useOrgStore = defineStore("org", () => {
     return orgData;
   };
 
-  const deleteOrg = async (uid) => {
+  const deleteMemberOrg = async (uid) => {
     // POST an org
 
     const result = await api.delete("/orgs/" + uid);
@@ -83,7 +83,7 @@ export const useOrgStore = defineStore("org", () => {
     validateOrgName,
     validateTitle,
     createOrg,
-    deleteOrg,
+    deleteMemberOrg,
     $reset
   };
 });
