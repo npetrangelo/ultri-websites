@@ -4,7 +4,7 @@ layout: home
 
 hero:
   name: "Izzup - A better way to share"
-  text: "A community sharing site, owned by the users and developers."
+  text: "A community site, owned by the users and developers."
   tagline: Governed, financed and run by the people who use it.
   actions:
     - theme: brand
