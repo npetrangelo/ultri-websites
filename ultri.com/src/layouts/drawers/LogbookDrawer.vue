@@ -32,13 +32,13 @@
         </q-item>
 
         <!-- LIST ORGANIZATIONS -->
-        <q-item header dense v-if="org.$state.orgs.size > 0">
+        <q-item header dense v-if="org.orgs.size > 0">
           <div class="text-center full-width text-bold text-italic">
             {{ $t("orgs.drawer.current-organizations") }}
           </div>
         </q-item>
         <q-expansion-item
-          v-for="[ix, item] in org.$state.orgs"
+          v-for="[ix, item] in org.orgs"
           :key="ix"
           expand-icon-toggle
           expand-separator

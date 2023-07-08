@@ -10,13 +10,20 @@ export const useOrgStore = defineStore("org", () => {
   const fetching = ref(false);
   const fetched = ref(false);
   const showOrgCreateDialog = ref(false);
+  const showOrgCreateLogbookEntryDialog = ref(false);
 
   const setCurrentOrg = (uid) => {
     currentOrgUid.value = uid;
   };
+
   const triggerOrgCreateDialog = () => {
     showOrgCreateDialog.value = true;
   };
+
+  const triggerOrgCreateLogbookEntryDialog = () => {
+    showOrgCreateLogbookEntryDialog.value = true;
+  };
+
   const validateOrgName = (orgName) => {
     if (orgName === null) {
       return false;
@@ -69,6 +76,7 @@ export const useOrgStore = defineStore("org", () => {
     currentOrgUid.value = null;
     fetching.value = false;
     showOrgCreateDialog.value = false;
+    showOrgCreateLogbookEntryDialog.value = false;
   }
 
   return {
@@ -77,9 +85,11 @@ export const useOrgStore = defineStore("org", () => {
     fetching,
     fetched,
     showOrgCreateDialog,
+    showOrgCreateLogbookEntryDialog,
     loadOrgs,
     setCurrentOrg,
     triggerOrgCreateDialog,
+    triggerOrgCreateLogbookEntryDialog,
     validateOrgName,
     validateTitle,
     createOrg,
