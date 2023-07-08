@@ -17,7 +17,7 @@ hero:
 
 features:
   - title: Developers
-    details: <b>Own the business you help build!</b><br /><br />Get real ownership, not worthless options. Have your voice heard, <a href="https://discord.gg/6752RB5b">join now</a>.<br />
+    details: <b>Own the business you build!</b><br /><br />Get real ownership, not worthless options. Have your voice heard, <a href="https://discord.gg/6752RB5b">join now</a>.<br />
   - title: Software Users
     details: <b>Own the software you use!</b><br /><br />Don't fear getting priced out of your tools, or them being discontinued. <a href="https://discord.gg/6752RB5b">Join now</a> to get the tools you want.
   - title: Together
