@@ -9,7 +9,7 @@ export default {
   'orgs.drawer.current-organizations': 'Organizations',
   'orgs.drawer.domains-caption': 'Org building blocks',
   'orgs.drawer.domains-label': 'Domains / Circles',
-  'orgs.drawer.canvases-caption': 'Unique perspectives on your oragnization',
+  'orgs.drawer.canvases-caption': 'Perspective on your organization',
   'orgs.drawer.canvases-label': 'Business Canvas',
   'orgs.drawer.okr-caption': 'Focus and align your goals',
   'orgs.drawer.okr-label': 'OKR',

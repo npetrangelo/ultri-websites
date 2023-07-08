@@ -73,7 +73,7 @@
         icon="mdi-notebook"
         :label="$t('orgs.drawer.logbook-label')"
         :caption="$t('orgs.drawer.logbook-caption')"
-        group="org-management"
+        group="top-level"
         header-class="text-weight-medium"
       >
         <!-- ADD LOGBOOK ITEM -->
@@ -121,7 +121,7 @@
         icon="mdi-office-building-cog"
         :label="$t('orgs.drawer.define-org-label')"
         :caption="$t('orgs.drawer.define-org-caption')"
-        group="org-management"
+        group="top-level"
         header-class="text-weight-medium"
       >
         <!-- MISSION STATEMENT -->
@@ -134,6 +134,42 @@
           header-class="text-weight-medium"
         >
           MISSION STATEMENT
+        </q-expansion-item>
+
+                <!-- CANVAS -->
+                <q-expansion-item
+          expand-separator
+          icon="mdi-checkbook"
+          :label="$t('orgs.drawer.canvases-label')"
+          :caption="$t('orgs.drawer.canvases-caption')"
+          group="org-management"
+          header-class="text-weight-medium"
+        >
+          Access to our dynamic business canvases
+          <!-- LIST OBJECTIVES -->
+          <q-expansion-item
+            v-for="[ix, item] in org.$state.orgMembers"
+            :key="ix"
+            expand-icon-toggle
+            expand-separator
+            :label="item.name"
+            :caption="item.uid"
+            :to="'/org/' + org.currentOrgUid + '/member/' + item.uid"
+          >
+            <!-- KEY RESULTS -->
+            <q-card>
+              <q-card-actions>
+                <!-- OBJECTIVE CONTROLS -->
+                <q-btn
+                  flat
+                  icon="mdi-delete"
+                  size="sm"
+                  @click="org.deleteMemberOrg(item.uid)"
+                  >{{ $t("nav.delete") }}</q-btn
+                >
+              </q-card-actions>
+            </q-card>
+          </q-expansion-item>
         </q-expansion-item>
 
         <!-- OKR -->
@@ -381,7 +417,7 @@
           icon="mdi-chart-bar-stacked"
           :label="$t('orgs.drawer.metrics-label')"
           :caption="$t('orgs.drawer.metrics-caption')"
-          group="org-management"
+          group="top-level"
           header-class="text-weight-medium"
         >
           Display the top internal metrics about org, related to cost and usage.
