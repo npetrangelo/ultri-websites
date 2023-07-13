@@ -2,8 +2,8 @@
   "events": [
     {
       "date": "2023-07-08",
-      "start": "2023-07-08 16:30",
-      "end": "2023-07-08 17:30",
+      "start": "2023-07-08 15:00",
+      "end": "2023-07-08 16:00",
       "duration": "60",
       "tzOffset": "-05:00",
       "title": "Weekly Planning",
@@ -14,22 +14,22 @@
       "bgcolor": "green"
     },
     {
-      "date": "2023-07-15",
-      "start": "2023-07-15 16:30",
-      "end": "2023-07-15 17:30",
+      "date": "2023-07-14",
+      "start": "2023-07-14 15:00",
+      "end": "2023-07-14 16:00",
       "duration": "60",
       "tzOffset": "-05:00",
       "title": "Weekly Planning",
-      "details": "",
+      "details": "* 10 minutes - Product Update (Brian) <br /> * 5 minutes - Co-op update (Brian)<br /> * 10 minutes - Design Session Discussion (Will)<br /> * 30 minutes - Compensating developers during startup period",
       "location": "",
       "allDay": "FALSE",
       "multiDay": "FALSE",
       "bgcolor": "green"
     },
     {
-      "date": "2023-07-22",
-      "start": "2023-07-22 16:30",
-      "end": "2023-07-22 17:30",
+      "date": "2023-07-21",
+      "start": "2023-07-21 15:00",
+      "end": "2023-07-21 16:00",
       "duration": "60",
       "tzOffset": "-05:00",
       "title": "Weekly Planning",
@@ -53,9 +53,9 @@
       "bgcolor": "blue"
     },
     {
-      "date": "2023-07-29",
-      "start": "2023-07-29 16:30",
-      "end": "2023-07-29 17:30",
+      "date": "2023-07-28",
+      "start": "2023-07-28 15:00",
+      "end": "2023-07-28 16:00",
       "duration": "60",
       "tzOffset": "-05:00",
       "title": "Weekly Planning",
@@ -66,9 +66,9 @@
       "bgcolor": "green"
     },
     {
-      "date": "2023-08-05",
-      "start": "2023-08-05 16:30",
-      "end": "2023-08-05 17:30",
+      "date": "2023-08-04",
+      "start": "2023-08-04 15:00",
+      "end": "2023-08-04 16:00",
       "duration": "60",
       "tzOffset": "-05:00",
       "title": "Weekly Planning",
@@ -79,9 +79,9 @@
       "bgcolor": "green"
     },
     {
-      "date": "2023-08-12",
-      "start": "2023-08-12 16:30",
-      "end": "2023-08-12 17:30",
+      "date": "2023-08-11",
+      "start": "2023-08-11 15:00",
+      "end": "2023-08-11 16:00",
       "duration": "60",
       "tzOffset": "-05:00",
       "title": "Weekly Planning",
@@ -92,9 +92,9 @@
       "bgcolor": "green"
     },
     {
-      "date": "2023-08-19",
-      "start": "2023-08-19 16:30",
-      "end": "2023-08-19 17:30",
+      "date": "2023-08-18",
+      "start": "2023-08-18 15:00",
+      "end": "2023-08-18 16:00",
       "duration": "60",
       "tzOffset": "-05:00",
       "title": "Weekly Planning",
@@ -105,9 +105,9 @@
       "bgcolor": "green"
     },
     {
-      "date": "2023-08-26",
-      "start": "2023-08-26 16:30",
-      "end": "2023-08-26 17:30",
+      "date": "2023-08-25",
+      "start": "2023-08-25 15:00",
+      "end": "2023-08-25 16:00",
       "duration": "60",
       "tzOffset": "-05:00",
       "title": "Weekly Planning",
@@ -118,9 +118,9 @@
       "bgcolor": "green"
     },
     {
-      "date": "2023-09-02",
-      "start": "2023-09-02 16:30",
-      "end": "2023-09-02 17:30",
+      "date": "2023-09-01",
+      "start": "2023-09-01 15:00",
+      "end": "2023-09-01 16:00",
       "duration": "60",
       "tzOffset": "-05:00",
       "title": "Weekly Planning",
@@ -131,9 +131,9 @@
       "bgcolor": "green"
     },
     {
-      "date": "2023-09-09",
-      "start": "2023-09-09 16:30",
-      "end": "2023-09-09 17:30",
+      "date": "2023-09-08",
+      "start": "2023-09-08 15:00",
+      "end": "2023-09-08 16:00",
       "duration": "60",
       "tzOffset": "-05:00",
       "title": "Weekly Planning",
@@ -144,9 +144,9 @@
       "bgcolor": "green"
     },
     {
-       "date": "2023-09-16",
-      "start": "2023-09-16 16:30",
-      "end": "2023-09-16 17:30",
+       "date": "2023-09-15",
+      "start": "2023-09-15 15:00",
+      "end": "2023-09-15 16:00",
       "duration": "60",
       "tzOffset": "-05:00",
       "title": "Weekly Planning",
@@ -157,9 +157,9 @@
       "bgcolor": "green"
     },
     {
-      "date": "2023-09-23",
-      "start": "2023-09-23 16:30",
-      "end": "2023-09-23 17:30",
+      "date": "2023-09-22",
+      "start": "2023-09-22 15:00",
+      "end": "2023-09-22 16:00",
       "duration": "60",
       "tzOffset": "-05:00",
       "title": "Weekly Planning",
@@ -170,9 +170,9 @@
       "bgcolor": "green"
     },
     {
-      "date": "2023-09-30",
-      "start": "2023-09-30 16:30",
-      "end": "2023-09-30 17:30",
+      "date": "2023-09-29",
+      "start": "2023-09-29 15:00",
+      "end": "2023-09-29 16:00",
       "duration": "60",
       "tzOffset": "-05:00",
       "title": "Weekly Planning",
