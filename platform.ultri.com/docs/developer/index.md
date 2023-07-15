@@ -1,6 +1,3 @@
-
-
-
 ## Containers
 
 * OpenResty/Nginx Proxy w/ SSL Termination
