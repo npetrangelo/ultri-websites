@@ -1,8 +1,24 @@
 # Prerequisites for installing the Infrastructure
 
+1. Git
+2. GitHub account and ssh key
+3. Docker installed
+
+## Useful but not required
+
+* PgAdmin
+* Local psql
+* Local Redis client
+* Postman
+* VSCode / VSCodium
+
 ## Git
 
 https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
+
+## Github Account and SSH key
+
+[https://github.com/settings/ssh/new](Create a new key)
 
 ## Docker
 
