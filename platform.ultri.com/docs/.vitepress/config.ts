@@ -20,6 +20,7 @@ export default defineConfig({
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Own It', link: 'https://coop.ultri.com' },
+      { text: 'Developers', link: '/developer/' },
       
     //  { text: 'Projects', link: '/tech-coop-projects/' },
     //  {
@@ -36,15 +37,15 @@ export default defineConfig({
       {
         text: 'Data',
         items: [
-          { text: 'Index', link: '/ultri-open-platform/' },
-          { text: 'API Model', link: '/nugget-api/' },
-          { text: 'Database Model', link: '/nugget-schema/' }
+          { text: 'Front end', link: '/developer/frontend/' },
+          { text: 'Infrastructure', link: '/developer/backend/' },
         ]
       }
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/OpenSociocracy' }
+      { icon: 'github', link: 'https://github.com/Ultri-Izzup/ultri-websites' },
+      // icon: 'github', link: 'https://github.com/Ultri-Izzup/ultri-infrastructure' }
     ]
   }
 })
