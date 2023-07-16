@@ -31,6 +31,14 @@
 
 ## Docker
 
+### Mac
+
+[Official Mac Docker Install](https://docs.docker.com/desktop/install/mac-install/)
+
+### Windows
+
+[Official Windows Docker Install](https://docs.docker.com/desktop/install/windows-install/)
+
 ### Ubuntu 
 
 Condensed from: 
@@ -94,9 +102,4 @@ Test you can run docker as non-root user
 ```sh
 docker run hello-world
 ```
-
-
-### Windows
-
-[Official Windows Docker Install](https://docs.docker.com/desktop/install/windows-install/)
 
