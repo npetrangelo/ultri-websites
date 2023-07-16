@@ -33,15 +33,23 @@ export default defineConfig({
     //  }
     ],
 
-    sidebar:[
-      {
-        text: 'Data',
-        items: [
-          { text: 'Front end', link: '/developer/frontend/' },
-          { text: 'Infrastructure', link: '/developer/backend/' },
-        ]
-      }
-    ],
+    sidebar: {
+      "/developer/": [
+        {
+          text: "Developer",
+          items: [
+            {
+              text: "Front End",
+              link: "/developer/frontend/",
+            },
+            {
+              text: "Infrastructure",
+              link: "/developer/backend/",
+            }
+          ]
+        }     
+    ]
+  },
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/Ultri-Izzup/ultri-websites' },
