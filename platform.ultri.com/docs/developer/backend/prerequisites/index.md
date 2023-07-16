@@ -96,6 +96,10 @@ docker run hello-world
 ```
 
 
+### Mac
+
+[Official Mac Docket Install](https://docs.docker.com/desktop/install/mac-install/)
+
 ### Windows
 
 [Official Windows Docker Install](https://docs.docker.com/desktop/install/windows-install/)
