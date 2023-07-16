@@ -1,4 +1,4 @@
-# Ultri Infrastrcutre Developer
+# Ultri Infrastructure Developer
 
 ## Prerequisites
 
@@ -39,7 +39,7 @@ The development Docker compose file spins up all the backend infrastructure. The
 #### Fastify 
 
 * The Fastify JavaScript API is avilable at the root of the proxy: [https://localhost](https://localhost)
-* In developemnt hot module reloading is enabled. Changes made in `/api/src/` will automatically show up locally.
+* In development hot module reloading is enabled. Changes made in `/api/src/` will automatically show up locally.
 * The frontend app is pre-configured to connect to the proxy and API correctly.
 
 #### Postgres 
@@ -57,6 +57,6 @@ Yu will bever have to work on this.
 
 #### SMTP Server
 
-We run SMTP4Dev on port 5000 to receive and and display thr emails sent from the API.
+We run SMTP4Dev on port 5000 to receive and and display the emails sent from the API.
 
 [API Emails](http://localhost:5000)

@@ -40,8 +40,12 @@ export default defineConfig({
     sidebar: {
       "/developer/": [
         {
-          text: "Developer",
+          text: "Development",
           items: [
+            {
+              text: "Overview",
+              link: "/developer/",
+            },
             {
               text: "Front End",
               link: "/developer/frontend/",

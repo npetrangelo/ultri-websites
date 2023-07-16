@@ -2,7 +2,12 @@
 
 ## Repositories
 
-There are two GitHub repositories, one for the static [frontend sites](https://github.com/Ultri-Izzup/ultri-websites) and one for the [backend infrastructure](https://github.com/Ultri-Izzup/ultri-infrastructure).
+[Frontend sites](https://github.com/Ultri-Izzup/ultri-websites)
 
+[Backend infrastructure](https://github.com/Ultri-Izzup/ultri-infrastructure).
 
+## Local Environment Setup
 
+[Frontend sites](/developer/frontend/)
+
+[Backend infrastructure](/developer/backend/)
