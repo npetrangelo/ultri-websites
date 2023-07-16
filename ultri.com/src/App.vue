@@ -28,12 +28,13 @@ watch(isSignedIn, () => {
 
 let apiHost;
 if (process.env.DEV) {
-  apiHost = "https://localhost";
+  apiHost = "https://example.com";
 }
 if (process.env.PROD) {
   apiHost = "https://api.service.ultri.com";
 }
 console.log("APIHOST", apiHost);
+
 SuperTokens.init({
   // enableDebugLogs: true,
   appInfo: {
@@ -46,6 +47,17 @@ SuperTokens.init({
     Passwordless.init(),
   ],
 });
+
+const initSocketConnection = async () => {
+    const token = await Session.getAccessToken();
+    if (token === undefined) {
+      console.log("User is not logged in");
+    }
+    const socket = io.connect('https://example.com', {
+        query: { token }
+    });
+    return socket;
+}
 
 const $q = useQuasar();
 
