@@ -1,11 +1,8 @@
 # Prerequisites for developing the Infrastructure
 
-1. Git
-2. GitHub account and ssh key
-3. GitHub Flow
-4. Docker installed
-5. Makecert with local cert authority
-6. A valid `.env` file
+1. Docker installed
+2. Makecert with local cert authority
+3. A valid `.env` file
 
 ## Useful but not required
 
@@ -14,20 +11,6 @@
 * Local Redis client
 * Postman
 * VSCode / VSCodium
-
-## Git
-
-[Install Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
-
-## Github Account and SSH key
-
-[Create a GitHub account](https://github.com/settings/ssh/new)
-
-[Create a new key](https://github.com/settings/ssh/new)
-
-## GitHub Flow
-
-[Install Instructions](https://docs.github.com/en/get-started/quickstart/github-flow)
 
 ## Docker
 
