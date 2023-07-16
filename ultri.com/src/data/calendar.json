@@ -27,6 +27,19 @@
       "bgcolor": "green"
     },
     {
+      "date": "2023-07-17",
+      "start": "2023-07-17 15:00",
+      "end": "2023-07-17 16:00",
+      "duration": "60",
+      "tzOffset": "-07:00",
+      "title": "Local Windows Setup",
+      "details": "Brian Will help setup the development environment on a Windows computer",
+      "location": "",
+      "allDay": "FALSE",
+      "multiDay": "FALSE",
+      "bgcolor": "orange"
+    },
+    {
       "date": "2023-07-21",
       "start": "2023-07-21 15:00",
       "end": "2023-07-21 16:00",
