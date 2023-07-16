@@ -11,3 +11,7 @@
 [Frontend sites](/developer/frontend/)
 
 [Backend infrastructure](/developer/backend/)
+
+## GitHub Project Setup
+
+![Click New Project button](/imgs/mgmt/github-create-project.png)
