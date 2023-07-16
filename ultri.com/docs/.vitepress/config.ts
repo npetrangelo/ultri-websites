@@ -3,6 +3,7 @@ import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "Ultri",
+  base: "/co-op/",
   description: "Build it - Use it - Own it",
   head: [
     [
@@ -18,59 +19,54 @@ export default defineConfig({
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: 'Home', link: '/' },
+      { text: 'Home', link: '../' },
       { text: 'About Us', link: '/about-us/' },
-      { text: 'Join', link: '/tech-coop-membership/' },
-      { text: 'Own It', link: '/tech-coop-ownership/' },
-      
+      { text: 'Join', link: '/coop-membership-packages/' },
+      { text: 'Own It', link: '/ownership/' },
+
     //  { text: 'Projects', link: '/tech-coop-projects/' },
     //  {
     //    text: 'Projects',
     //    ariaLabel: 'Project Menu',
     //    items: [
     //      { text: 'Sociocracy Handbook', link: 'https://handbook.opensociocracy.org/' },
-    //      { text: 'Sociocracy Logbook', link: 'https://logbook.opensociocracy.org/' }
+    //      { text: 'Sociocracy Logbook', link: 'https://www.ultri.com/logbook' }
     //    ]
     //  }
     ],
 
-    sidebar: {
-      "tech-coop-membership": [
-      {
-        text: 'Co-op Membership',
-        items: [
-          { text: 'Options', link: '/tech-coop-membership/' },
-          { text: 'Sign Up', link: 'https://logbook.opensociocracy.org/' }
+    sidebar: [
+        {
+          text: 'Join Now',
+          items: [
+            { text: 'Membership Options', link: '/coop-membership-packages/' },
+
         ]
-      }
-    ],
-    "tech-coop-ownership": [
+      },
       {
         text: 'Ownership Model',
         items: [
-          { text: 'Stakeholders', link: '/tech-coop-ownership/stakeholders/' },
-          { text: 'Benefits', link: '/tech-coop-ownership/benefits/' },
-          { text: 'Responsibilities', link: '/tech-coop-ownership/responsibilities/' },
-          { text: 'Governance', link: '/tech-coop-ownership/governance/' },
-          { text: 'Financial', link: '/tech-coop-ownership/financial/' },
-          { text: 'Guidance', link: '/tech-coop-ownership/guidance/' },
-          { text: 'Investments', link: '/tech-coop-ownership/investments/' },
+          { text: 'Purpose', link: '/ownership/' },
+          { text: 'Stakeholders', link: '/ownership/stakeholders/' },
+          { text: 'Benefits', link: '/ownership/benefits/' },
+          { text: 'Expectations', link: '/ownership/responsibilities/' },
+          { text: 'Governance', link: '/ownership/governance/' },
+          { text: 'Financial', link: '/ownership/financial/' },
+          { text: 'Guidance', link: '/ownership/guidance/' },
+          { text: 'Investments', link: '/ownership/investments/' },
+          { text: 'Co-op Bylaws', link: '/bylaws/' },
+          { text: 'Financial Projections', link: '/market/' },
         ]
-      }
-    ],
-    "about-us": [
+      },
       {
         text: 'Co-op Projects',
         items: [
           { text: 'Sociocracy Handbook', link: 'https://handbook.opensociocracy.org/' },
-          { text: 'Sociocracy Logbook', link: 'https://logbook.opensociocracy.org/' },
+          { text: 'Sociocracy Logbook', link: 'https://www.ultri.com/logbook' },
           { text: 'Circle Builder', link: 'https://github.com/OpenSociocracy/circle-builder' },
-
         ]
       }
-    ]
-    },
-
+    ],
     socialLinks: [
       { icon: 'github', link: 'https://github.com/OpenSociocracy' }
     ]

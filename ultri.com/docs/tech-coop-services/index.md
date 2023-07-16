@@ -1,4 +1,4 @@
-# Ultri Tech Co-op - Services
+# Ultri Co-op - Services
 
 $75-$250 depending upon the contract length and term.
 
