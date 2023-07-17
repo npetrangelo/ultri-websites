@@ -2,6 +2,7 @@ export default {
   "nav.account": "Accounts",
   "nav.home": "Home",
   "nav.close": "Close",
+  "nav.calendar": "Calendar",
   "nav.benefits": "Benefits",
   "nav.communicate": "Communicate",
   "nav.delete": "Delete",

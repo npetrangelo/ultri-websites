@@ -28,12 +28,13 @@ watch(isSignedIn, () => {
 
 let apiHost;
 if (process.env.DEV) {
-  apiHost = "https://localhost";
+  apiHost = "https://example.com";
 }
 if (process.env.PROD) {
   apiHost = "https://api.service.ultri.com";
 }
 console.log("APIHOST", apiHost);
+
 SuperTokens.init({
   // enableDebugLogs: true,
   appInfo: {
@@ -46,6 +47,7 @@ SuperTokens.init({
     Passwordless.init(),
   ],
 });
+
 
 const $q = useQuasar();
 

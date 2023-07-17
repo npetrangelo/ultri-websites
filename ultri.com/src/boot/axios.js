@@ -9,7 +9,7 @@ import axios from "axios";
 // for each client)
 let apiHost;
 if (process.env.DEV) {
-  apiHost = "https://localhost";
+  apiHost = "https://example.com";
 }
 if (process.env.PROD) {
   apiHost = "https://api.service.ultri.com";
