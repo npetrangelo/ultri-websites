@@ -15,3 +15,14 @@
 ## GitHub Project Setup
 
 ![Click New Project button](/imgs/mgmt/github-create-project.png)
+
+## Onboarding
+
+### Install Prerequisites
+
+* [Platform Prerequisites](/developer/prerequisites/)
+
+* An IDE, preferabbly VSCodium or VSCode.
+
+
+
