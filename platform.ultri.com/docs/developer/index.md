@@ -22,7 +22,7 @@
 
 * [Platform Prerequisites](/developer/prerequisites/)
 
-* An IDE, preferabbly VSCodium or VSCode.
+* An IDE, preferably VSCodium or VSCode.
 
 
 
