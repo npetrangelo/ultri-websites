@@ -61,7 +61,7 @@ export default defineConfig({
     },
 
     socialLinks: [
-      { icon: "github", link: "https://github.com/Ultri-Izzup/ultri-websites" },
+      { icon: "linkedin", link: "https://github.com/Ultri-Izzup/ultri-websites" },
       // icon: 'github', link: 'https://github.com/Ultri-Izzup/ultri-infrastructure' }
     ],
 
