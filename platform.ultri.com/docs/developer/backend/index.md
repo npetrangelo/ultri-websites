@@ -4,7 +4,7 @@
 
 You will need to have a few things configured locally before starting. You may already have them installed.
 
-[View Prerequisites](/developer/backend/prerequisites/)
+[View Prerequisites](/developer/prerequisites/)
 
 ## Run Docker Stack
 
