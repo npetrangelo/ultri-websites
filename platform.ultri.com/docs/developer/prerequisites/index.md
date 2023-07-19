@@ -6,7 +6,7 @@
 4. nvm or nvm-windows
 5. Yarn
 4. Docker installed
-5. Makecert with local cert authority
+5. Mkcert with local cert authority
 6. A valid `.env` file
 7. Hostfile entries for *.example.com
 8. Quasar CLI isntalled
@@ -118,6 +118,13 @@ Test you can run docker as non-root user
 ```sh
 docker run hello-world
 ```
+
+## Install mkcert
+
+SuperTokens will complain/fail if the local certs are missing or seem invalid.
+We use `mkcert` to define a local trused CA that only the local browsers and OS can trust.
+
+[Installation Instructions](https://github.com/FiloSottile/mkcert)
 
 ## Host file entries
 
