@@ -31,6 +31,17 @@
 
 [Create a new key](https://github.com/settings/ssh/new)
 
+### Local git config
+
+Run the following, replacing `Your Name` and `youremail@yourdomain.com` with appropriate values.
+
+```sh
+git config pull.rebase false
+git config --global user.name "Your Name"
+git config --global user.email "youremail@yourdomain.com"
+```
+
+
 ## GitHub Flow
 
 [Install Instructions](https://docs.github.com/en/get-started/quickstart/github-flow)
