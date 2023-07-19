@@ -11,6 +11,8 @@
 7. Hostfile entries for *.example.com
 8. Quasar CLI isntalled
 
+Post in Discord if you have any issues.
+
 ## Useful but not required
 
 * [PgAdmin](https://www.pgadmin.org/download/)
