@@ -41,7 +41,6 @@ git config --global user.name "Your Name"
 git config --global user.email "youremail@yourdomain.com"
 ```
 
-
 ## GitHub Flow
 
 [Install Instructions](https://docs.github.com/en/get-started/quickstart/github-flow)
@@ -98,6 +97,13 @@ echo \
 
 ```sh
 sudo apt-get update
+## Install Vitepress
+
+```sh
+npm install -g vitepress
+```
+
+
 ```
 
 ```sh
@@ -141,6 +147,13 @@ We use `mkcert` to define a local trused CA that only the local browsers and OS 
 
 Add these to `/etc/hosts/` on Linux / Mac.
 
+## Install Vitepress
+
+```sh
+npm install -g vitepress
+```
+
+
 ```sh
 127.0.0.1 example.com  www.example.com api. example.com
 ```
@@ -165,5 +178,6 @@ This may be a hidden file, and you will need to edit it as an administrator.
 
 ## Install Quasar CLI
 
-```npm i -g @quasar/cli```
-
+```sh
+npm i -g @quasar/cli
+```
