@@ -9,6 +9,7 @@
 5. Makecert with local cert authority
 6. A valid `.env` file
 7. Hostfile entries for *.example.com
+8. Quasar CLI isntalled
 
 ## Useful but not required
 
@@ -143,4 +144,8 @@ This may be a hidden file, and you will need to edit it as an administrator.
 [View Hidden Files](https://answers.microsoft.com/en-us/windows/forum/all/i-dont-have-a-hosts-file/8c9f1152-25f1-4545-9e1f-acc028e9e018)
 
 [Edit a file as Administrator](https://answers.microsoft.com/en-us/windows/forum/all/cannot-save-hosts-file-as-it-says-i-do-not-have/c3016440-8b68-4268-81d7-d9ff184a15eb)
+
+## Install Quasar CLI
+
+```npm i -g @quasar/cli```
 
