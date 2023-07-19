@@ -9,7 +9,7 @@
 5. Mkcert with local cert authority
 6. A valid `.env` file
 7. Hostfile entries for *.example.com
-8. Quasar CLI isntalled
+8. Quasar CLI installed
 
 Post in Discord if you have any issues.
 
