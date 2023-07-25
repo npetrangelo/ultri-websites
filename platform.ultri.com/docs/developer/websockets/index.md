@@ -45,3 +45,6 @@ server.get(
 ## Front end
 
 
+## SuperTokens
+
+[SuperTokens Usage](https://supertokens.com/docs/thirdparty/common-customizations/sessions/with-websocket)
